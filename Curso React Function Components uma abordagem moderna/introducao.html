@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Function components, uma abordagem moderna</title>
+	<link rel="stylesheet" href="../Curso React Entendendo como a biblioteca Funciona/assets/style.css">
+	<link rel="stylesheet" href="../NLW Copa/assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/128/1273/1273697.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" style="width: 2rem;" src="https://cdn-icons-png.flaticon.com/128/1273/1273697.png" alt="">
+
+			<p class="title" style="margin-left: 5.2rem">React | Function components, uma abordagem moderna</p>
+
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Iniciando com functions components</option>
+				<option value="2">02. Utilizando Material UI </option>
+				<option value="3">03. Forms e Hooks</option>
+				<option value="4">04. Regras dos Hooks</option>
+				<option value="5">05. Tratamento dos erros</option>
+			</select>
+
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="#">01 introdução</a>
+						<span>7min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="./iniciando com function components/primeiro.html">02 Primeiro Function Component</a>
+						<span>17min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="./iniciando com function components/facilitando.html">03 Facilitando a prototipação</a>
+						<span>15min</span>
+					</aside>
+				</li>	
+
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">01 Introdução</h1>
+			
+			<a href="./iniciando com function components/primeiro.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="./videoaulas/introducao.mp4"></video>
+
+		<section class="transcricao cards">
+
+			<div class="carde texto2" style="background: none; margin: 3rem 0 0 0">
+				<img src="https://cdn-icons-png.flaticon.com/128/1273/1273697.png" class="img_card" alt="">
+				<div class="textos" style="background: none;">
+					<h5 class="cetralize">Function components, uma abordagem moderna</h5>
+					<hr>
+				</div>
+			</div>				
+		</section>
+
+		<article class="mostrar hidden">
+			<hr>
+			<p class="texto_continuar p">
+				<i>continuar lendo</i>
+				<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+			</p>
+			<hr>
+		</article> 
+	</section>			
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../Curso React Entendendo como a biblioteca Funciona/assets/script.js"></script>
+
+<script>
+	$(document).on("change", "#select", function(e){
+		if($(this).val() == "1"){
+			location.href = "introducao.html"
+		}
+
+		else if($(this).val() == "2"){
+			location.href = "./material UI/projeto.html"
+		}
+
+		else if($(this).val() == "3"){
+			location.href = "./forms e hooks/formularios.html"
+		}
+
+		else if($(this).val() == "4"){
+			location.href = "./regras hooks/regra_hook.html"
+		}
+
+		else if($(this).val() == "5"){
+			location.href = "./tratamento/exibindo_erros.html"
+		}
+	});
+
+</script>
+</body>
+</html>
