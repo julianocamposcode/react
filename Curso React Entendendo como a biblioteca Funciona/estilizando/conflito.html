@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Estilizando componentes</a>
+						<span>7min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="conflito.html">02 Conflito de nomes</a>
+						<span>7min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="organizando.html">03 Organizando o projeto</a>
+						<span>10min</span>
+					</aside>
+				</li>				
+				
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">02 Conflito de nomes</h1>
+			
+			<a href="organizando.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/conflito de nomes.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Como eu falei, eu trouxe para o nosso projeto a estilização que eu tinha pensado para os nossos cards. Não está maravilhosa porque só estilizei ele, não o container, estou usando o flex box e o grid, caso você não conheça é legal ver os cursos de layout e de grid que a gente tem na Alura para estilizar 
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					e ter mais agilidade, e focar no react, já que a estilização dos componentes não é o foco do curso, afinal como vimos fazemos isso através de CSS.
+				</p>
+				<p class="p">
+
+					[00:30] Aqui tenho display flex, flex direction, align items, todo esse monte de CSS que a gente tem para estilização do nosso card, e note como ficou. Coloquei o class name em todas as classes que eu precisava. Coloquei na section, que é o card em si, tenho o header, o cabeçalho, o título, meu texto, todos esses são classes que estou colocando aqui e a gente trouxe para o projeto.
+				</p>
+				<p class="p">
+					[00:57] Você vai conseguir pegar isso pronto no final da aula com o projeto, e por enquanto está assim. Não está bonito. Vou trazer o resto do CSS, mas antes queria mostrar como está ficando e falar de alguns detalhes. Também trouxe nosso reset CSS, deixei a index CSS. Aqui é o reset onde está deixando uma página em branco para conseguir trabalhar.
+				</p>
+				<p class="p">
+					[01:20] A gente tem uma série de estilos, de classes que ele vai aplicar em vários elementos do html para que a gente tenha uma página em branco e todo o site fique igual em todos os navegadores que o pessoal possa usar.
+				</p>
+				<p class="p">
+					[01:36] Meu index.css tem essa parte de reset e o estilo.css que está dentro da pasta card nota já está no nosso projeto. Mas uma coisa que eu queria falar também é que como falei no vídeo passado, quando a gente importou o estilo do CSS eu falei que como a gente está dentro do módulo ele é encapsulado, ele não conhece por padrão outros arquivos que a gente tenha no projeto. Então precisei importar o estilo do CSS para que quando o react fizer a transplação que a gente falou de todos os componentes para alguma coisa que o browser entenda, ele vai conseguir linkar o arquivo, pegar a estilização.
+
+				</p>
+				<p class="p">
+					[02:22] Só que isso não quer dizer que a gente não pode ter conflito de nome. Como falei, a gente vai ter uma pasta para cada componente. Vou criar outra pasta para o lista de notas. Se você reparou, eu mudei a pasta onde meu card troca de lugar e não precisei mudar os imports, isso porque o visual studio encode me ajudou e no lista de notas ele mudou o import sozinho para mim. Se eu criar uma nova pasta para o lista de notas, der enter e mudar para jx para cá, ele vai perguntar se quero mover. Quero mover. E na hora que faço isso o app js já foi atualizado. Já está atualizando o caminho sozinho.
+				</p>
+
+				<p class="p">
+
+					[03:02] Se você tem problema com importação pode ser porque não tenha feito a atualização automática. No meu caso, ele está fazendo, por isso não tive esse problema. Mas como eu estava falando tenho o lista de notas e não tenho problema com nomes de arquivos. Não tenho conflito com nomes de arquivos, porque estou pegando através do caminho relativo. Dentro dessa pasta que esse arquivo está quero pegar o estilo CSS.
+				</p>
+				<p class="p">
+					[03:25] Isso quer dizer que se na lista de notas eu tiver outro arquivo que chamo de estilo.css e importar no lista de notas não vou ter problema com o nome do arquivo. Se eu vier e der um import ./, então quero pegar dentro da pasta onde está o lista de notas, estilo.css, eu não vou ter problema com o nome do arquivo.
+				</p>
+
+				<p class="p">
+					[03:52] Se eu fizer isso agora e tentar adicionar um class name de card nota, pegar esse mesmo estilo daqui e trouxer para cá, não vou ter o problema de conflito de nome. Ele vai entender que esse arquivo estilo.css é diferente desse outro arquivo estilo.css. O que eu tiver aqui está isolado nesse ponto e o que eu tiver no outro estilo está isolado nesse ponto.
+				</p>
+
+				<p class="p"> 
+					[04:22] Se você reparar, na hora que eu trouxe o class name do card nota, no final ele criou um card gigante para mim com aquela classe, porque na hora da transpilação do meu código ele vai pegar todos os arquivos de estilo CSS e vai transformar em um bando só de um único CSS. Então essas classes estão disponíveis para todos os meus componentes, por isso o conflito de nome entre classes do CSS existe.
+				</p>
+				<p class="p">
+					[04:47] Se por acaso eu vier nesse estilo, copiar essa classe e trazer para o lista de notas e mudar alguma cor nela, ele vai dar conflito, vai trazer todos os cards que não deveriam estar roxos como roxos, porque essa classe do CSS, na hora que está sendo transpilada para o browser fica pública e todo o html consegue acessar. Se eu abrir meu inspetor e procurar pela classe você pode ver que temos o card nota com o color e o card nota com todo o layout que a gente fez.
+				</p>
+
+				<p class="p">
+					[05:26] Ele entendeu que tenho duas classes diferentes com o mesmo nome. E ele trouxe as duas. Mas aí uma sobrescreve a outra. Então tenho que tomar cuidado com esse conflito de nome. E aí o padrão que a gente está adotando aqui é que vou pagar no começo da classe o nome do elemento.
+				</p>
+
+				<p class="p">
+					[05:42] No caso aqui, a lista de notas vou chamar de lista de notas e poderia por só lista notas para não ficar com o de no meio, coloco como sendo componente principal e a área dela que quero layoutar. No caso, lista de notas pode ser essa ul aqui. Seria lista notas. E aqui embaixo nas lis vou ter o class name, que vou chamar de lista de notas item. Só para a gente não ter aquele conflito de nomes. Sempre coloco como prefixo o nome do componente. Inclusive aproveito isso para colocar na tag pai desse componente daquela classe, para ser o layout principal, e depois vou colocando underline para os subconjuntos que quero estilizar embaixo.
+				</p>
+
+				<p class="p">
+					[06:37] Vou trazer o resto dos componentes. O resto dos estilos para cá, e cada componente no final vai ter sua pasta. Dentro da pasta vai ter o próprio jsx daquele componente e o estilo CSS que a gente vai voltar com esse layout um pouco mais definido, lembrando que essa parte que vou fazer fora do vídeo é só CSS. Depois se você quiser olhar com calma como fiz, onde usei o grid, onde não usei, fique à vontade. Se você quiser ver os cursos de CSS também para se aprofundar nessas técnicas a gente tem na Alura, você pode ver lá.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[2].selected = () => {}
+	</script>
+</body>
+</html>

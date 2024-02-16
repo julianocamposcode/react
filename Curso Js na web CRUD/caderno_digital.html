@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Caderno</title>
+</head>
+<body>
+	<style> 
+		
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.caderno {
+			display: flex;
+			padding: 1rem;
+			flex-direction: column;
+		}
+
+		h1 {
+			text-align: center;
+			padding-block: 1rem;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.salvar {
+			padding: 1rem;
+			color: black;
+			background: steelblue;
+			border-radius: 15%;
+		}	
+
+		.delete {
+			color: black;
+			background: red;
+			border-radius: 15%;
+		}
+
+		.buttons {
+			padding: 1rem;
+			gap: .5rem;
+			display: flex;
+		}
+
+		.between {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		textarea {
+			width: 90%;
+			margin: 0 auto;
+			line-height: 160%;
+			padding: 1rem;
+		}
+
+		p {
+			position: absolute;
+		}
+
+		.none {
+			display: none;
+		}
+
+		.dark {
+			position: absolute;
+			right: 0;
+			color: white;
+			background: black;
+			border-radius: 10%;
+			margin: 1rem;
+			padding: 0.5rem;
+		}
+
+		.escuro {
+			background: #1b1b1c;
+			color: white;
+		}
+
+	</style>
+
+	<section class="caderno">
+
+		<button class="dark">
+			<span>Dark Theme</span>
+		</button>
+		<form action="">
+			<h1>Anotações</h1>
+
+			<textarea name="" id="" cols="30" rows="30">
+			</textarea>
+
+			<div class="between">
+				<div class="buttons">
+					<input type="submit" value="Salvar" class="salvar">
+					<button class="delete">
+						<span>Excluir</span>
+					</button>
+				</div>
+			</div>
+		</form>
+	</section>
+
+	<script>
+
+
+		let form  = document.querySelector('form')
+		let area = form.querySelector('textarea');
+		let apagar = document.querySelector('.delete')
+		let salvar = document.querySelector('.salvar')
+		let dark = document.querySelector('.dark')
+		let caderno = document.querySelector('.caderno')
+
+		form.addEventListener('submit' , event => {
+			event.preventDefault()
+
+			let area = form.querySelector('textarea').value
+
+			localStorage.area = area
+		})
+
+		area.innerHTML = localStorage.area
+
+		salvar.onclick = () => {
+
+			let condicao = document.createElement('p')
+			condicao.classList.add('salvado')	
+			form.appendChild(condicao);
+
+			if (area.value == '') {
+				alert('Não é possível salvar uma anotação vazia!')
+			}else {
+				salvar.value = 'salvo'
+				condicao.innerText = 'Anotação salva com sucesso!'
+			}
+		}
+
+		apagar.addEventListener('click' , event => {
+
+			if (area.value == '') {
+				alert('Não é possível apagar uma anotação que não existe!')
+			}else {
+				let apagaOuNao = confirm('Tem certeza que deseja Excluir essa anotação? Essa ação não poderá ser desfeita!')
+
+				if(apagaOuNao == true) {
+					let salvo = document.querySelector('.salvado')
+
+					if(salvo == null) {
+						area.value = '';
+					}else {
+						salvo.classList.add('none')				
+					}
+
+					area.value =''
+					salvar.value = 'salvar'
+				}
+			}
+		})
+
+		if(localStorage.area == undefined) {
+			area.value =''
+		}
+
+
+		dark.onclick = () => {
+			caderno.classList.toggle('escuro')
+			area.style.backgroundColor = '#181c1f'
+			area.style.color = 'white'
+		}
+
+	</script>
+</body>
+</html> 

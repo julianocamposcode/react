@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Ciclo de vida dos componentes</title>
+	<link rel="stylesheet" href="../../Curso React Entendendo como a biblioteca Funciona/assets/style.css">
+	<link rel="stylesheet" href="../../NLW Copa/assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/128/973/973776.png">
+</head>
+
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue"
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU"
+			alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+
+
+	<header>
+		<label for="primeiro">
+			<img class="toggle"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU"
+				alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+
+		<div>
+			<img class="logo" style="width: 2rem;" src="https://cdn-icons-png.flaticon.com/128/973/973776.png" alt="">
+
+			<p class="title" style="margin-left: 4.5rem">React | Ciclo de vida dos componentes</p>
+
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Deletando um card</option>
+				<option value="2">02. Criando lista de categorias</option>
+				<option value="3">03. Seguindo padrões</option>
+				<option value="4">04. Observable</option>
+				<option value="5">05. Ciclo de vida dos objetos</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="../introducao.html">01 introdução</a>
+						<span>3min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="projeto.html">02 Projeto inicial do curso</a>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="importando.html">03 Importando SVGs</a>
+						<span>10min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="deletando.html">04 Deletando cards</a>
+						<span>14min</span>
+					</aside>
+				</li>
+
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">04 Deletando cards</h1>
+
+			<a href="../lista de categorias/criando_lista_categoria.html">
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/deletando cards.mp4"></video>
+
+		<section class="transcricao cards">
+
+			<div class="carde texto2" style="background: none; margin: 3rem 0 0 0">
+				<img src="https://cdn-icons-png.flaticon.com/128/973/973776.png" class="img_card" alt="">
+				<div class="textos" style="background: none;">
+					<h5 class="cetralize">Ciclo de vida dos componentes</h5>
+					<hr>
+				</div>
+			</div>
+		</section>
+
+		<article class="mostrar hidden">
+			<hr>
+			<p class="texto_continuar p">
+				<i>continuar lendo</i>
+				<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+			</p>
+			<hr>
+		</article>
+		</section>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../../Curso React Entendendo como a biblioteca Funciona/assets/script.js"></script>
+
+	<script src="../main.js"></script>
+	<script>
+		const opitions = document.querySelectorAll('option');
+
+		opitions[0].selected = () => { }
+
+	</script>
+</body>
+
+</html>

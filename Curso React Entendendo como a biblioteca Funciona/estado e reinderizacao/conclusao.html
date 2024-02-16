@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto_final.html">Projeto Final</a>
+					</aside>
+				</li>
+				<li>					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Passando propriedades</a>
+						<span>14min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="propriedades.html">02 Mais propriedades</a>
+						<span>10min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="state.html">03 O State</a>
+						<span>17min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="conclusao.html">04 Conclusão</a>
+						<span>4min</span>
+					</aside>
+				</li>
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">04 Conclusão</h1>
+			
+			<a href="#"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		
+		<video controls="" src="../videoaulas/curso 1/conclusao.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Parabéns para você que chegou até aqui nesse primeiro curso de react. A primeira vez que a gente está olhando para o framework a gente já viu bastante coisa. Apesar de ser uma aplicação simples, que não tem tanta coisa, não é tão bonita, obviamente que você vai deixar muito melhor colocando
+				<section id="hidden" class="none">
+					<p class="p">
+						
+						mais funcionalidades, mas já deu para ver como a lib funciona.
+					</p>
+				</p>
+				<p class="p">
+					[00:20] A gente viu no começo como criar uma aplicação, como instalar o react, depende do node para isso, vimos algumas maneiras de usar o nvm para gerenciar as versões. E a partir daí, uma vez que tínhamos a aplicação criada, começamos a desenvolver ela e entender que o react é uma lib criada pelo Facebook para fazer visualizações dinâmicas, com bastante interação.
+				</p>
+				<p class="p">
+					[00:46] A gente começou simples, entendendo o que são componentes, como separar os componentes, o que é o jsx. Dentro do projeto, do app, a gente também criou, vimos que é uma classe, começamos com o vclass components, a partir do momento que é uma classe temos o construtor, para ele temos o estado, vimos no finalzinho como renderizar dinamicamente o estado dos objetos e faz com que a visualização seja realmente dinâmica, porque até a gente atualizar não estava, uma vez estava renderizada como estática.
+				</p>
+				<p class="p">
+					[01:26] A gente começou a fazer nosso projeto e entender os componentes. Vimos que desde o componente fazemos o método render, que é um método gerenciado pelo react, e a partir daí, uma vez que ele é gerenciado pelo react consegue fazer uma série de otimizações através do virtual nome que ele tem.
+				</p>
+				<p class="p">
+					[01:45] Para funcionar, temos que retornar uma hierarquia do jsx, que é uma extensão do JavaScript que vimos nesse curso. Vimos como trabalhar com ele. Ele deixa a gente definir componentes, lembrando que criamos uma instância desse componente com essa tag, que expresse bastante uma sintaxe de html, de marcação.
+				</p>
+				<p class="p">
+					[02:12] Lembrando que vimos também que a sintaxe dá mais ou menos a mesma ideia de fazer um new. Toda vez que tenho uma tag, estou dando um new em algum objeto porque cada um desses objetos que criei são uma classe. Se eu navegar até eles podemos ver que temos uma classe. Dentro dessa classe usamos também a parte de propriedades, essa palavra especial, essas props do react, uma palavra especial que serve para fazer injeção de dependências e passar coisas dinamicamente para a classe, na instanciação dela.
+				</p>
+
+				<p class="p">
+					[02:43] No caso aqui do formulário usamos as propriedades dela para passar dinamicamente qual o método de criar uma nota que a gente queria que ele usasse. Nessa ideia de criar nota a gente também viu que precisamos lidar com eventos, afinal nosso formulário uma vez que tenho um campo de input, ele vai ser atualizada e quando for atualizado vai disparar no navegador o método de on change.
+				</p>
+				<p class="p">
+					[03:11] A gente viu que precisamos associar o método da nossa instância, o método desse formulário para o nosso evento de on change daquele objeto de input, e para isso preciso fazer a associação do this, porque vimos que ele é dinâmico no JavaScript, depende de um contexto. Se a gente não fizer o bind, a associação, esse contexto se perde, e se ele se perde a gente tem um erro. É muito comum acontecer, a gente viu nesse curso como associar o bind a um evento que está acontecendo.
+				</p>
+
+				<p class="p">
+					[03:41] Bastante coisa que a gente viu. A aplicação ficou simples, mas mostra muito do conteúdo básico do react, e agora você consegue brincar um pouco com isso, criar seus propriedades componentes e fazer a árvore de renderização, de hierarquia que você quiser.
+				</p>
+				<p class="p">
+					[04:02] Também passamos na nossa lista de notas a parte de JavaScript dinamicamente dentro do jsx de uma maneira que no caso a gente rodasse uma lista, um array. A gente faz um map em cima de um array e a partir dele a gente gera vários elementos que quero que sejam renderizados, porque dessa forma tenho menos código para alterar se precisar alterar alguma coisa. Se precisar alterar a partir dessas notas que foram passadas, se precisar alterar a maneira como estão renderizadas eu altero uma vez e está tudo feito internamente, todas as alterações são replicadas para todas as notas que a gente está criando. É uma vantagem de trazer o JavaScript para junto da renderização.
+				</p>
+				<p class="p">
+					[04:44] Muita coisa que a gente viu nesse curso, uma introdução bem legal do react. Te espero no próximo curso.
+				</p>
+			</section>
+
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+		opitions[4].selected = () => {}
+	</script>
+</body>
+</html>

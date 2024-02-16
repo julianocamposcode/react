@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../assets/img/react_entendendo.png">
+</head>
+<body>
+	<!-- MENU LATERAL -->
+	
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+
+
+	<header>
+		
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+		<div>
+			<img class="logo" src="../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+
+		</div>
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 introdução</a>
+						<span>3min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="./criando o projeto/criando_projeto.html">02 Criando o Projeto</a>
+						<span>14min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="./criando o projeto/limpando_projeto.html">03 Limpando o Projeto</a>
+						<span>6min</span>
+					</aside>
+				</li>	
+
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">01 Introdução</h1>
+
+			<a href="./criando o projeto/criando_projeto.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="./videoaulas/curso 1/1-introducao.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+
+				[00:00] Tudo bom? Neste curso vamos começar a entender a biblioteca do react. Ela foi criada pelo Facebook para fazer renderização e layouts mais complexos dentro da web, e ele facilita nossa vida em vários pontos. Vamos começar a entender como ele funciona,o pensamento por trás dele,
+			</p>
+
+			<section id="hidden" class="none">
+
+				<p class="p">
+					como a gente desenvolve aplicações. No final vamos ter essa aplicação de notas, o ceep.
+				</p>
+
+				<p class="p">
+
+					[00:30] Posso criar uma nova nota. Uma vez que dou o criar nota ele vai criar essa nova nota para mim. Vou ter um evento de formulário, a gente vai ver como o react trabalha com formulários e como a gente consegue transferir informações a partir de um evento de submit no formulário para outro componente do react.
+				</p>
+				<p class="p">
+
+					[00:53] Se a gente olhar no código, vamos ter nosso app. No final ele vai estar muito simples. A gente vai entender como essa ação de renderização funciona, para que ela serve, como a gente vai criar componentes baseados em classe do JavaScript, como vamos criar nossos propriedades métodos dentro dos componentes para atualizar o estado deles. Uma vez que o estado for atualizado a gente vai conseguir ver refletido na página e vamos criar nossos próprios componentes.
+				</p>
+				<p class="p">
+					[02:06] A gente tem ele passando uma lista, utilizando um método que recebe um array de notas, e para cada nota a gente vai renderizar um item dentro da lista com o outro componente, que é o card da note. Vamos navegar até o card e no final ele tem a renderização que lembra muito um html, mas é o jsx, não é o html. A gente pode usar elementos do JavaScript dentro do jsx para tirar informações e deixar mais dinâmico.
+
+				</p>
+				<p class="p">
+					[01:25] Vamos criar um formulário de cadastro e uma lista de notas. A partir desse formulário de cadastro a gente vai passar informações para a lista de notas usando o elemento pai como meio de passar informações. A gente vai usar o app para passar informações de um lado para o outro, e essas informações vão ser passadas através de propriedades.
+
+				</p>
+				<p class="p">
+					[01:42] A gente tem propriedades personalizadas que a gente vai criar durante o curso. A lista de notas é também um componente onde a gente tem um estado do JavaScript, o jsx, que é essa sintaxe toda estranha que lembra o html, mas não é o html. Vamos ver como trabalhar com o jsx. Inclusive a extensão do arquivo.
+
+				</p>
+
+				<p class="p">
+
+
+					[02:38] Inclusive, vamos ver como passamos props para o nosso componente e o estado, que são os dois atributos principais de qualquer componente do react. Além disso, vamos ver como funciona e algumas especificações de como o JavaScript funciona, porque a gente tem que fazer a associação de algum eventos com métodos de instância. A gente vai ver por que precisamos usar isso, como funciona e como vamos contornar os erros que aparecem durante o processo de desenvolvimento de uma aplicação do navegador usando react e JavaScript.
+
+				</p>
+				<p class="p">
+
+					[03:16] Vamos estudar o react.
+				</p>
+			</section>
+
+
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</section>				
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="./assets/script.js"></script>
+
+	<script>
+		$(document).on("change", "#select", function(e){
+			if($(this).val() == "1"){
+				location.href = "index.html"
+			}
+
+			else if($(this).val() == "2"){
+				location.href = "./componentizando o sistema/projeto.html"
+			}
+
+			else if($(this).val() == "3"){
+				location.href = "./estilizando/index.html"
+			}
+
+			else if($(this).val() == "4"){
+				location.href = "./eventos e propriedades/index.html"
+			}
+
+			else if($(this).val() == "5"){
+				location.href = "./estado e reinderizacao/projeto_final.html"
+			}
+		});
+	</script>
+</body>
+</html>

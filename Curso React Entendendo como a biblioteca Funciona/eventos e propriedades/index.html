@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Lidando com eventos</a>
+						<span>12min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="binds.html">02 Binds</a>
+						<span>5min</span>
+					</aside>
+				</li>
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">01 Lidando com eventos</h1>
+
+			<a href="binds.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/eventos.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Agora que a gente já tem nosso layout feito podemos voltar e pensar na funcionalidade que queremos para a aplicação. Para cada nota que eu escrever no formulário quando eu clicar em criar nota tem que criar um novo card para mim com o título e a nota que eu escrevi no formulário.
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					Para isso, vamos começar lidando com o formulário e aprender como lidamos com eventos no react.
+				</p>
+				<p class="p">
+					[00:25] Se a gente quer lidar com evento, vou vir na classe de formulário. Tenho meu método render e dentro dele tenho o formulário e os inputs, o botão que a gente quer manusear, manipular, para ter os eventos. Se quero pegar o título, por exemplo, porque quero salvar numa variável antes de submeter para o botão, vou querer usar os eventos de on change. No input vou manusear e passar a referência para como ele deve executar quando tiver um evento de mudança.
+				</p>
+				<p class="p">
+
+					[01:02] Tenho para isso o atributo de eventos on change. Você pode ver que ele já vem com uma série de eventos que o html lança. O on change vem do html. Podemos usar esses eventos dentro do react.
+				</p>
+				<p class="p">
+					[01:23] Esse atributo novo que a gente vai passar para o input vai chamar uma função quando for disparado. Já que é um evento, quero que quando ele for disparado chame uma função. A gente quando está lidando com eventos criamos uma função que chamamos de handler. São as funções de handler. É uma palavra que vem do inglês, é difícil traduzir, é a ideia de lidar com alguma coisa que está acontecendo, mas como ia ficar muito grande o pessoal costuma chamar de handler.
+
+				</p>
+				<p class="p">
+					[02:03] Como vou criar uma função que deve ser chamada, vou fora do método criar outro método handler. Quero aqui o handler, quero que ele gerencie minha função de mudança de título. Então, handle mudança de título. Isso vai ser um método que vou chamar.
+
+				</p>
+				<p class="p">
+					[02:30] Como ele é um handle e está sendo disparado através de um evento, ele vai ter um parâmetro com as informações do evento que foi disparado. Tenho o handle de título, que vai ser receber por parâmetro um evento e aí quero passar esse método como referência para o on change usar.
+				</p>
+
+				<p class="p">
+					[02:48] Só que repare que quando escrevo embaixo o próprio visual studio já pinta de vermelho, porque lembrando que se eu deixar dessa maneira ele vai entender como sendo string, e não quero que entenda como string, quero que entenda como uma parte do JavaScript, uma referência para um método que tenho dentro da classe. O que tenho que fazer é usar as chaves em volta para falar que isso é código JavaScript e esse evento handle mudança de título, como é um método que depende da mudança de classe tenho que chamar através do this. Pega esse método dessa classe que você foi criado.
+
+				</p>
+				<p class="p">
+					[03:30] O on change vai receber o this handle mudança de título. Vamos ver funcionando. No evento de mudança vou dar o console log, vou pegar o target do evento target value. Vai ser o valor do campo. Tenho o meu evento, toda vez que for chamado vai dar o console, a gente vai ver no navegador aparecendo a aba de console na lateral.
+				</p>
+
+				<p class="p">
+					[04:02] Se eu vier em título e começar a digitar nova nota, a gente pode ver que está vindo disparado, para cada tecla que disparar ele vem aqui e imprime o valor do campo que a gente colocou que está sendo disparado no evento.
+				</p>
+				<p class="p">
+					[04:15] Dessa maneira estou pedindo para toda vez que o input mudar chamar o método da classe. Mas como a gente falou mais para a frente não adianta só chamar o método e dar um console.log nele. Quero salvar essa informação em algum outro lugar para quando vier no form e chamar o submission form, se eu vier mais para a frente que a gente vai fazer e chamar o submit, quero fazer alguma coisa com os eventos que salvei através dos métodos de on change.
+				</p>
+				<p class="p">
+					[04:50] Para isso, vou ter que guardar o handle mudança de título, esse evento target value em alguma variável, algum atributo propriedade desse formulário de cadastro. Para isso, se você já viu nosso curso de orientação de objetos com o JavaScript você pode lembrar que a gente tem que ter nosso método construtor e nele a gente vai declarar as propriedades e atributos dessa classe.
+				</p>
+				<p class="p">
+					[05:15] Vou tentar falar mais atributo, porque propriedade dentro do react tem outra conotação, outro significado, então estou declarando os atributos dessa classe. Vou chamar o this título, ele vai ser aspas vazias, vai ser inicializado como aspas vazias.
+				</p>
+				<p class="p">
+					[05:33] Dentro do handle mudança de título quero falar que o this título vai ser igual ao evento target value, ou seja, cada vez que o handle for chamado vou atribuir o que tiver no campo de título no meu atributo de título na minha classe de formulário cadastro.
+				</p>
+				<p class="p">
+					[05:54] Quando a gente usa o this título e o this handle mudança de título quer dizer que estou usando um atributo ou método de uma instância, então esse formulário cadastro quando a gente está no app js e usa ele como tag, quer dizer que está dando por trás dos panos um new no formulário cadastro. Seria algo similar, não é exatamente assim que faz, mas a dar um new formulário cadastro.
+				</p>
+				<p class="p">
+					[06:28] É como se estivesse declarando, instanciando um novo formulário através do new, só que não usamos a palavra-chave new, porque o react tem outras coisas que vai fazer por trás dos panos. Ele vai associar essa tag, esse novo elemento que a gente está criando com o que está por trás dos panos.
+				</p>
+				<p class="p">
+					[06:54] O que a gente está fazendo é toda vez que chamamos uma tag estou dando um new numa classe, e essa classe como é instanciada esse this título pertence a uma única classe. Se tivesse vários formulários, cada formulário teria seu título, seu atributo definido.
+				</p>
+				<p class="p">
+					[07:10] Vamos salvar e voltar no nosso react. Ele me deu um erro, falando que preciso chamar o construtor antes do this, porque estou construindo uma classe que estende de componente. Antes de declarar atributos dessa classe filha tenho que chamar o construtor do meu pai. Por isso ele deu erro.
+				</p>
+				<p class="p">
+					[07:35] Agora sim tenho o título, o formulário, se eu começar a digitar a gente deveria ver aparecendo no console o título que a gente está digitando do lado. Ele me deu um erro, porque está falando que o this é indefinido. Aqui embaixo ele já dá uma dica, mostra onde aconteceu o erro. Está dando erro na linha 11. Ele bateu no this e parou. Está falando que esse this não existe.
+				</p>
+				<p class="p">
+					[08:30] Mas eu falei para vocês que estou dentro de uma classe, de uma instância de uma classe, o this deveria existir, assim como o this do construtor deu certo, ele conseguiu construir a classe. Se eu atualizar ele consegue construir minha classe formulário. Por que esse this deu erro? Lembrando que são duas atribuições. Aqui é uma declaração e atribuição e aqui só uma atribuição porque já foi declarado previamente.
+				</p>
+				<p class="p">
+					[09:00] Por que esse deu erro e esse não? O this no JavaScript é dinâmico. Apesar de estar dentro de um método de uma classe, na hora que chamo no on change e passei para esse evento o método que quero chamar, quem está chamando esse método é esse evento de on change, não a própria instância. Quando é um evento externo chamando um método de uma instância, o this não é passado para esse método, então não consegue achar.
+				</p>
+				<p class="p">
+					[09:35] É muito confuso falar assim, mas vamos fazer um teste no navegador. Vou aumentar o console e vamos declarar uma classe pessoa, uma classe padrão JavaScript sem nada de mais. Essa classe vai ter um construtor, ele não vai ter nada de mais também. Só vai ter um atributo this fala igual a um oi.
+				</p>
+				<p class="p">
+					[10:08] Toda vez que eu chamar esse atributo ele vai me devolver oi. E aí quero fazer um método. Vou declarar um método falar. Esse falar precisa de parênteses, abre chaves. Ele vai chamar o console log para o nosso this fala. Só declarei uma classe, coloquei um construtor com atributo e um objeto falar que imprime para mim esse atributo que a gente colocou. Ele deu um retorno indefinido, mas posso instanciar a classe. Então, this let ip igual a new pessoa.
+				</p>
+				<p class="p">
+					[10:54] Se dou um p falar a gente pode ver que ele imprimiu meu oi. Esse é o comportamento que a gente espera quando temos o formulário título. É isso que a gente esperava. Tenho um método nessa classe, ela chama um atributo da classe e quero que seja executado. Tem que executar na mão, não pode dar erro.
+				</p>
+				<p class="p">
+					[11:16] Só que o que na verdade estamos fazendo nesse caso? Quem está chamando essa função não seria o p, seria o link externo. Estamos fazendo alguma coisa diferente. Estou falando para importar para mim a referência para esse método. Pegue uma variável método e guarde a referência para o método no p falar. E aqui não estou executando. Então o método agora é uma função falar. É a referência para aquela função.
+				</p>
+				<p class="p">
+					[11:48] Quando passei o on change igual this handle mudança título, estou falando para ele guardar para mim a referência para esse método. Aqui a mesma coisa. Ele tem a função para o falar, no caso aqui vai ter a referência para a função handle mudança de título.
+				</p>
+				<p class="p">
+					[12:07] Só que na hora que executo esse método ele me dá o this is undefined, que vai dar um erro, porque quem está chamando a função falar não é a classe, é o método. Esse objeto externo que chamei de método e não é parte da instância que criei. Então, o this para dentro do método que a gente criou não é declarado, definido. E aí a gente vai ter que ver como lidar com isso no próximo vídeo.
+				</p>
+
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[3].selected = () => {}
+	</script>
+
+</body>
+</html>

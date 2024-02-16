@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto_final.html">Projeto Final</a>
+					</aside>
+				</li>
+				<li>		
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Passando propriedades</a>
+						<span>14min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="propriedades.html">02 Mais propriedades</a>
+						<span>10min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="state.html">03 O State</a>
+						<span>17min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="conclusao.html">04 Conclusão</a>
+						<span>4min</span>
+					</aside>
+				</li>
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+			<h1 class="title_top">03 O State</h1>
+			
+			<a href="conclusao.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+		
+		<video controls="" src="../videoaulas/curso 1/o state.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Como a gente viu, já tenho associado aos meus elementos, meu formulário já consegue criar uma nota a partir do meu app js, aquela injeção de dependência passando para ele a função que quero que ele chame, e a gente está vendo que a lista de notas está funcionando.
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					[00:15] Se ela está funcionando, por que não consigo ver as notas no meu layout? Por que não está sendo atualizado? Para entender, precisamos voltar e entender como o react funciona. Como a gente viu, ele está pegando o array de notas, mas não está atualizando a lista. Por que quando adicionamos uma nota a uma lista essa lista não é atualizada?
+				</p>
+				<p class="p">
+					[00:51] Lembra que eu falei que dentro da função render, quando a gente tem o jsx, estou declarando um elemento novo, é a mesma coisa, a ideia é similar a dar um new nesse elemento? Se estou dando um new lista de notas, essa sintaxe com as propriedade seria mais ou menos parecida com isso. Tenho o construtor, dentro dele passo um objeto com a propriedade notas e estou passando this notas. É mais ou menos essa a ideia que a gente tem quando declaro dessa maneira.
+				</p>
+				<p class="p">
+					[01:28] Só que se eu rodar o new lista de notas, quando renderizar de novo vou ter que dar um novo new, porque a lista foi atualizada, e se estou passando notas como referência, independente de ser atualizado esse objeto não vai saber que foi atualizado, porque ele está pegando a informação, guardado, e nunca mais vai atualizar, nunca mais vai saber, ele copiou as informações, mas nunca foi passado novamente pelo construtor ou outro método essa lista.
+				</p>
+				<p class="p">
+					[02:02] Como a gente pode fazer para o react entender que preciso desenhar de novo essa seção de elementos? Para isso preciso chamar o método render de novo, porque até o momento ele só chamou quando criou o componente. Se a gente for no index js do projeto, na hora que dei o reactdom do projeto, ele fala renderiza os elementos, e o app está declarando, como se estivesse naquele new, no f.js.
+				</p>
+				<p class="p">
+					[02:35] Como ele dá esse new, ele vai preparar o elemento, construir, passar as propriedades para dentro, criar o atributo notas, e aí assim que estiver pronto, sincronizado com o navegador, vai chamar o método render. Por isso na primeira vez que a gente carrega a página ele está desenhando os elementos. Não precisei chamar internamente o meu método render, porque o próprio react cuida de chamar o método através do reactdom.
+				</p>
+
+				<p class="p">
+					[03:04] Então, se quero que ele desenhe novamente, quero que atualize aqui embaixo, quero passar uma nova lista com informações atualizadas fazendo o new, vou ter que chamar o render. Se eu chamar o método render sem nota, o que pode acontecer?
+				</p>
+				<p class="p">
+					[03:35] Uma vez que criei uma nota estou falando para renderizar o objeto, atualiza ele para mim e desenha de novo, que significa criar uma nova instância do formulário e criar uma nova instância da lista de notas. Uma vez que estou criando uma nova instância, essa lista de notas está atualizada, porque na linha anterior já vi que ela foi atualizada, teoricamente vou ter que renderização funcionando.
+				</p>
+
+				<p class="p">
+					[04:02] Voltando ao navegador, já carregou, sumiu a contagem que eu tinha, crio uma nova, dei um render, dois render, três render. Tenho três elementos e teoricamente chamei a função de render no app.js na linha 21. Ou seja, ele está entrando na função de renderização. Se eu estou teoricamente retornando uma nova lista com as notas, por que não estou vendo os elementos aparecendo na lateral?
+				</p>
+				<p class="p">
+					[04:35] Acontece que renderização é uma coisa super pesada normalmente, uma coisa bem difícil de fazer, e costuma ser bem custosa. Se eu deixar a chamada do método render livre na mão do desenvolvedor, pode ser que ele chame isso muito mais vezes do que ele precisa de fato, e aí vou gastar processamento para uma coisa que não vai ser necessariamente útil, porque não vou ter nenhuma atualização na minha visualização, e se eu nunca chamar, ele vai atualizar todo o estado da tela, mas nunca vai ser atualizado dinamicamente.
+				</p>
+				<p class="p">
+					[05:13] O método render de qualquer componente do react, assim como alguns outros que a gente ainda vai ver em outros cursos, é um método especial, que o próprio react tem que gerenciar, não depende do programador, de você que está desenvolvendo a aplicação gerenciar quando esse método vai ser chamado ou não. A gente tem algumas maneiras de saber quando vai ser chamado ou não, conseguimos evitar que seja chamado, mas são técnicas mais avançadas, mas você não faz o gerenciamento básico, você não chama diretamente, então a gente não pode chamar.
+				</p>
+				<p class="p">
+					[05:46] A maneira que o react achou dele não atualizar e evitar da gente fazer isso que quando chamo o método render, o react tem o virtualdom, a gente pode pensar como sendo um espelho, uma imagem dessas tags html que a gente tem aqui, ele tem uma cópia disso em memória e quando chamamos o render ele vai atualizar essa cópia, mas não o dom de fato, porque quando ele atualiza o dom do html, do navegador, aí sim ele vai pedir o repent da página, vai renderizar a página inteira.
+				</p>
+				<p class="p">
+					[06:20] Quando a gente chama aqui, pode ser, não tenho certeza, que esteja atualizando o virtualdom, mas não pediu para sincronizar com o dom do browser do html. Então não adianta chamar direto, é uma função, um método especial que quem vai gerenciar é o react.
+				</p>
+				<p class="p">
+					[06:44] Como faço então para pedir para ele renderizar? A gente tem um atributo especial, que é o listado. Todo componente do nosso react tem duas propriedades básicas, o props que a gente criou como lista de notas, que estamos chamando e vem pelo construtor, é uma maneira de passar informações para os elementos, mas tenho também o state. O this state.
+				</p>
+				<p class="p">
+					[07:22] É uma propriedade especial, toda vez que ela é atualizada, e ela está sendo também gerenciada pelo react, o react vai chamar o método render desse componente que foi alterado o estado dele. Como é uma propriedade especial do react não posso chamar o state diretamente também, porque é a mesma coisa de chamar o render.
+				</p>
+
+				<p class="p">
+					[07:55] Para alterar o estado, e ele funcionar diretamente, vai usar um setter. Aquele assessor que se você não conhece a gente viu nos cursos de orientação a objeto, mas ele não tem um setter daquela maneira. Vou ter que chamar o this.setState. Mas ele é um assessor. A partir do momento em que chamo tenho que passar o novo estado desse componente. No nosso caso, o novo estado, e por padrão costumamos colocar um objeto dentro. Ele vai iniciar como sendo um objeto, porque um objeto consigo adicionar coisas facilmente. Se eu passasse diretamente o this.notas não daria certo.
+				</p>
+				<p class="p">
+					[08:42] Vou colocar o novo estado que tenho as notas iguais this.notas. Dessa maneira a gente consegue dizer para ele atualizar o estado interno do componente para que o estado notas dele seja compatível com o atributo notas que a gente alterou, o array que já dei o push.
+				</p>
+				<p class="p">
+					[09:06] Se eu fizer isso, e a gente voltar e começar a criar cards, ele está dinamicamente aparecendo na tela, posso criar quantos cards eu quiser porque está criando os cards dinamicamente e a partir do meu estado. Toda vez que crio uma nova nota vou configurar e atribuir um estado novo para esse componente, no caso o app, porque quando atribuo um estado novo através do set state internamente o método consegue gerenciar o método de renderização e conseguir renderizar esse elemento para a gente da maneira correta sem sobrecarregar o navegador, sem que faça nada que ele não queira que a gente faça.
+				</p>
+				<p class="p">
+					[09:48] Além disso, se eu chamar esse set state sem mudar as minhas notas, ele não vai ficar pensando em rerenderizar, por mais que esteja chamando o set state, dessa maneira estamos atualizando estado e ele vai internamente gerenciar essa renderização.
+				</p>
+				<p class="p">
+					[10:12] Como estamos mudando o estado do objeto, quero que também a lista de notas comece a usar esse estado, e não o array. Não é muito comum ter essas notas assim. O mais comum é na minha inicialização vou falar que tenho no meu estado um notas, uma propriedade notas que vai ser um array vazio, e dentro do criar nota vou chamar o set state, mas para chamar preciso criar um novo estado. Vou deixar aqui do lado, vou falar que o novo estado vai ser igual a um objeto onde o nosso array de notas vai ser igual ao novo array de notas. Esse novo array vai pegar o estado anterior e adicionar a nova nota que eu já criei.
+				</p>
+				<p class="p">
+					[11:12] Então, meu const novo array de notas vai pegar o estado anterior, this.state.notas, e quero adicionar minha nova nota. Só que quero fazer isso em um array, vou usar o stretch operator e vou associar uma nova nota no final. Tenho esse novo array que pode ser usado embaixo. Nesse novo estado aí sim vou saber do meu set state e não preciso mais desse push.
+				</p>
+				<p class="p">
+					[11:47] Essa é uma cara um pouco mais parecida com o que você vai ver em projetos. Tenho no meu construtor posso atribuir meu estado de maneira direta, então this.state é igual ao meu objeto passando um array vazio de notas, e na hora de criar uma nota vou criar aquele objeto, criar um novo array para fazer um novo estado e dar um set state.
+				</p>
+				<p class="p">
+					[12:12] Se eu tivesse mais atributos eu poderia usar um stretch operator aqui no meu estado se tivesse mais coisas além dessas notas, mas como eu não tenho vou fazer dessa maneira.
+				</p>
+				<p class="p">
+					[12:20] Se eu voltar, ele deu erro. This props notas não é definido. Está falando na lista de notas js, porque o notas não existe mais, é this state notas. Posso para acessar o estado acessar diretamente, só preciso chamar o set state para atribuir um novo estado.
+				</p>
+				<p class="p">
+					[12:43] Dessa maneira agora sim vou criar uma nova nota, se eu der um criar vem com o título escreva sua nota aqui. Para não vir dessa maneira posso vir na lista de notas. Uma vez que já tenho essa nota criada vou passar para o meu card meu título, que vai ser igual nota título, vamos colocar entre chaves, porque é uma variável do JavaScript, e vou colocar o texto entre chaves nota.texto.
+				</p>
+				<p class="p">
+					[13:20] Assim estou recebendo nas propriedades o array de notas que veio do pai, que é o estado do map, estou iterando a partir do map e pegando cada uma dessas, para cada nota vou criar uma li, e dentro dessa li vou pegar o card notas e passar para ele como propriedade o título e o texto. Dentro do card nota tenho que atualizar para aqui dentro usar, entre chaves, o this.props.titulo. Aqui embaixo, na minha nota, vou receber this.props.texto.
+				</p>
+				<p class="p">
+					[14:06] Dessa maneira se eu escrever uma nova nota com um novo texto e pedir para ele criar uma nova nota com um novo texto está vindo dinamicamente. Posso colocar, mandar, e ele vai criar a nova nota. Posso criar notas dinamicamente. Assim tenho nosso sistema de criação de notas funcionando.
+				</p>
+				<p class="p">
+					[14:40] O que a gente viu é como o react bem por cima gerencia a renderização para não sobrecarregar o navegador da pessoa. E como a gente altera o estado dos componentes, uma vez que ele tenha esses estados. Quero que uma vez que estado seja mudado que ele renderize, atualize a visualização. Já que até o momento como não estávamos fazendo nada dinâmico ele não estava renderizando nada, não precisava atualizar a visualização porque estava sendo estática até o momento, os componentes de input e text área naturalmente já são atualizados, não dependem da aplicação porque são tags que vieram do próprio jsx, que a gente está usando que se associam ao html.
+				</p>
+				<p class="p">
+					[15:26] Dessa maneira a gente consegue usar o estado da aplicação. Set state e atributo, propriedade state é uma propriedade especial que a gente pode ficar de olho quando estivermos usando os componentes do react.
+				</p>
+			</section>
+			
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[4].selected = () => {}
+	</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto.html">Projeto da aula anterior</a>
+					</aside>
+				</li>
+
+				<li>					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Criando Componentes</a>
+						<span>15min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="plugins.html">02 Praticando e utilizando plugins</a>
+						<span>13min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="integrando.html">03 Integrando o js</a>
+						<span>9min</span>
+					</aside>
+				</li>				
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">02 Praticando e utilizando plugins</h1>
+			
+			<a href="integrando.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/praticando plugins.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				
+				[00:00] Como eu falei, a gente consegue agora consegue, já vimos que podemos criar class components como criamos na lista de notas, exporto para ela usando o export default ou só o export, essas classes para conseguir usar esses elementos na minha
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					renderização de outros elementos.
+				</p>
+				<p class="p">
+
+					[00:16] Nosso app é um elemento jsx e uso nossa lista de notas que também é um elemento jsx, no caso aqui ele está falando que é uma classe, mas se eu voltar lá e ler ele sim é uma classe, mas a classe estende de um componente. Esse componente é parte do react, então ele consegue renderizar elementos.
+				</p>
+				<p class="p">
+					[00:32] A gente pode componentizar mais ainda nosso layout para a gente ficar com pequenas peças reutilizáveis que eu posso encaixar em vários momentos. O que posso fazer agora é pegar todo esse código do form e criar um novo class component para ele. Vou tirar isso daqui e vou criar um novo arquivo. Vamos no meu source components criar um novo arquivo e o formulário cadastro jsx.
+				</p>
+				<p class="p">
+					[01:02] Tenho meu formulário cadastro jsx e minha lista de notas jsx. É aquela mesma coisa, então vou dar um import no react from react e aí quero usar um class, esse class vai ser meu formulário cadastro, e ele estende o meu componente do jsx. Ele já vai fazer o autoimport para mim. Meu componente aliás do react, não do jsx.
+
+				</p>
+				<p class="p">
+					[01:47] Essa é uma classe a deriva, meu formulário deriva desse componente, ou seja, ele tem acesso a todas as propriedades que esse componente tem e a gente consegue usar o código da lib que foi criado para a gente.
+				</p>
+				<p class="p">
+					[02:00] Vou abrir essa classe e desenhar. Quando a gente joga aqui no nosso app ele vai interpretar essa hierarquia de filhos do nosso app e vai chamar o método render dos elementos para conseguir pegar a árvore e a hierarquias desses elementos, então tenho que pegar o método render, vou criar aqui. Ele tem que retornar minha estrutura de filhos. Ele vai dar um return de múltiplas linhas, vou abrir e fechar parênteses, e vou jogar todo o formulário ali dentro. “Shift + Alt + F” para ele formatar, vamos dar "Ctrl + B" para fechar a aba lateral. Aqui tenho nosso formulário. Tenho meu render return formulário e esse formulário tem os filhos input área e button.
+				</p>
+
+				<p class="p">
+					[02:48] Dessa maneira a gente consegue ter o formulário de cadastro um pouco mais abstraído. Para utilizar ele vou ter que dar um export. Vou dar export formulário cadastro. Para vir aqui quero usar o formulário cadastro, o vs code já está dando autoimport para mim, facilita minha vida. Ele já veio, inclusive colocou as chaves, porque não usei o export default.
+				</p>
+				<p class="p">
+					[03:15] Se a gente for ver agora, vou recarregar para ter certeza, nosso app continua funcionando, essa cara feia eu sei, a gente vai melhorar aos poucos, mas a estrutura já mantém a mesma. Apesar de na minha section ter só o formulário cadastro e lista de notas, ele vai ser traduzido para minha ul e meu form, e as lis que estão dentro desses elementos, usando esses filhos deles. Ele vai compondo minha hierarquia através desses filhos que a gente tem aqui.
+				</p>
+
+				<p class="p">
+					[03:47] Nossa section está muito melhor, o formulário é pequeno o suficiente para eu entender de pronto o que está acontecendo, mas o lista de notas pode ver que ainda está super estática, óbvio, porque temos três filhos que coloquei aqui na mão, o texto que ele vai estar. Isso não é uma boa prática. É só para a gente começar a entender essa hierarquia.
+				</p>
+
+				<p class="p"> 
+					[04:05] Aqui a gente pode ver que tenho uma section, outra aqui. Outro plugin que uso no visual studio code, esse highlight selection, porque na hora que seleciono uma sessão ele já vê quais são as outras sessões parecidas no meu código, por isso está com essa linha. Esse é outro plugin que eu uso, ele faz justamente isso. É uma maneira muito fácil de conseguir vir aqui e falar quais são as partes parecidas. Ele seleciona para mim.
+				</p>
+				<p class="p">
+					[04:37] Pode ver que tenho três sessões muito parecidas aqui dentro. Se tenho essas três sessões muito parecidas esse é um component da nossa nota, o card que vai representar nossa nota. Vamos criar mais um componente para ele. Vou vir em componentes, novo arquivo, card nota jsx, e aí de novo vamos ter que dar import, react, é um processo bem trabalhoso, para cada componente que a gente vai criar vou ter que escrever esse texto padrão aqui.
+				</p>
+
+				<p class="p">
+					[05:16] Para isso a gente pode também utilizar outro plugin, vou buscar ele aqui, que vai ser o react simple react snippets. Ele vai com alguns comandos muito simples ele já completa para mim o que preciso.
+				</p>
+
+				<p class="p">
+					[05:35] Já instalei, vou vir no card notas como estava digitando, fechar na lateral, e agora quero além de importar o react, quero criar um class component. Quero criar, dou um cc e ele cria o component para mim. Se eu der imr ele vai importar para mim o react. Se eu der imrc ele vai importar o react e o componente. É muito mais fácil, facilita minha digitação, não preciso gastar tanto tempo digitando as coisas repetitivas. Mais uma vez, imrc, dou um tab e ele dá o autocomplete.
+				</p>
+
+				<p class="p">
+					[06:23] Aqui embaixo vou dar cc, ou seja, um class component, quero criar esse component, dou um enter, e ele também dá o complete. Só por curiosidade, se eu der cc e tab ele também completa para mim.
+				</p>
+				<p class="p">
+					[06:38] Nesse caso aqui tenho o card nota. Ele vai estender nosso componente, já traz para mim e outra maneira aqui embaixo, inclusive acho que é legal mudar os outros arquivos para deixar tudo padronizado. Mas tenho o export card nota.
+				</p>
+				<p class="p">
+					[06:56] Ele vem com esse state, a gente vai ver isso mais para a frente, vou tirar ele daqui, e quando quero renderizar quero retornar para ele essa parte da minha section, vou dar um "Ctrl + X" e pedir para ele formatar. Tenho meu card nota e ele vai renderizar essa section com esse cabeçalho e esse ip.
+				</p>
+				<p class="p">
+					[07:12] Se eu vier aqui, posso apagar essas três sections, e vou renderizar, dizer que cada li vai ter um card nota. Vou fechar esse elemento sem precisar de um componente. Tenho o card nota, fez o auto import para mim. Se eu tiver três cards notas vou ter a mesma renderização, espero ter, que eu tinha antes, porque ele vai pegar aqueles componentes e vai pegando todos os filhos e trazendo para essa hierarquia do html que depois ele consegue entender.
+				</p>
+				<p class="p">
+					[07:54] Só que a gente tem aqui então agora nosso formulário cadastro, minha lista de notas e meu card notas. Tenho quatro componentes porque meu app também é um componente. Para deixar padronizado junto com os outros, vou tirar essa sintaxe de function app, que é uma sintaxe um pouco mais nova, a gente está trabalhando com class components, que não é antigo, mas é de onde iniciou o react, essa sintaxe de functions, ou function components como o pessoal chama, é uma sintaxe mais nova, e quero padronizar meu projeto deixando tudo com a mesma cara.
+				</p>
+				<p class="p">
+					[08:30] Vou apagar isso aqui, não quero function app, quero um class app, e esse class app vai estender no meu component do react. Dessa maneira não posso só retornar, tenho que estar com meu método render. Vou renderizar ele, e aí sim tenho o retorno.
+				</p>
+				<p class="p">
+					[09:00] Só mantendo a mesma estrutura dentro do meu projeto inteiro, essa consistência, deve funcionar da mesma maneira, e se eu voltar continua funcionando. Está tudo funcionando. Agora tenho todos os meus componentes declarados como class components. Para deixar tudo padronizado vou colocar os exports default nos formulários, nas classes que eu tinha deixado aqui embaixo.
+				</p>
+				<p class="p">
+					[09:22] Além do export, vou jogar para baixo para a gente manter a padronização da nossa aplicação que vai ficar mais fácil reconhecer o que está acontecendo nela e como a gente navega por esse código que estamos criando.
+				</p>
+				<p class="p">
+					[09:40] Quero dar um export default, e aí ele vai vir com a lista de notas. Já tenho a lista de notas, o formulário, o card, e aí só preciso mudar meu formulário para não ter essas chaves mais, porque estou exportando ele como default daquela classe.
+				</p>
+				<p class="p">
+					[10:05] A gente criou e componentizar nosso sistema de maneira que tenhamos pequenos pedaços de cada vez que olho um render consigo entender fácil o que ele está fazendo. Meu card é pequeno suficiente para entender o que ele está fazendo, minha lista de notas é pequena o suficiente, e o formulário também, dessa maneira a gente consegue depois compor esses elementos da maneira que precisar para criar layouts mais complexos com mais interação e mais interessantes, com pequenas peças, que é muito mais fácil da nossa cabeça abstrair.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</section>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[1].selected = () => {}
+	</script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.87)
+    url("https://media.istockphoto.com/id/1158573544/pt/foto/keyboard-with-glowing-programming-codes.jpg?s=612x612&w=0&k=20&c=_0WkfGNV7WIo_gP03TSzezcEWJQCyXC12qaqjFSGVWs=");
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.icon {
+  background-image: linear-gradient(rebeccapurple, steelblue, turquoise, black);
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  margin: 0 5px;
+  font-size: 23px;
+}
+
+.white {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.white:nth-child(3) {
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.img_logo {
+  width: 16rem;
+  margin-bottom: 3rem;
+  position: relative;
+  bottom: 90px;
+  animation: aparenceLogo 2s;
+}
+
+.tittle {
+  padding-block: 1rem;
+}
+
+.geral {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  position: relative;
+  bottom: 4rem;
+  line-height: 200%;
+}
+
+.pai_inicio,
+.li_cursos {
+  list-style: none;
+  margin-top: 40px !important;
+}
+
+.inicio {
+  list-style: none;
+  padding-block: 0.5rem;
+}
+
+.inicio {
+  cursor: pointer;
+}
+
+.inicio:nth-child(1) {
+  animation: aparence 1s forwards;
+}
+
+.inicio:nth-child(2) {
+  animation: aparence 2s forwards;
+  animation-delay: 1s;
+}
+
+.inicio:nth-child(3) {
+  display: flex;
+  animation: aparence 3s forwards;
+  animation-delay: 2s;
+  align-items: center;
+}
+
+.crud {
+  margin: 8px;
+  margin-left: -1px;
+}
+
+.list_style {
+  width: 1.3rem;
+}
+
+.inicio:hover .list_style {
+  transform: rotate(90deg);
+  transition: 200ms;
+}
+
+.hr {
+  background: white;
+  padding: 0.1rem;
+  margin-block: 0.6rem;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.7) linear-gradient(black, steelblue);
+  background-blend-mode: darken;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+  justify-content: space-around;
+  padding-top: 12rem;
+}
+
+.carde {
+  color: white;
+  border: 1px outset steelblue !important;
+  width: 15rem;
+  height: 18rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.carde:hover {
+  animation: animation-alura 500ms forwards;
+  border: 1px inset steelblue !important;
+}
+
+.textos {
+  margin-top: 1rem;
+}
+
+.a {
+  font-size: 20px;
+  margin-bottom: 7px;
+  text-align: center !important;
+}
+
+.img_card {
+  width: 4rem;
+}
+
+.cetralize {
+  text-align: center;
+}
+
+.img_curso {
+  width: 2.5rem;
+}
+
+.geral_cursos {
+  margin-left: 4rem;
+}
+
+.li_cursos {
+  display: flex;
+  align-items: center;
+  border: 1px outset steelblue !important;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.li_cursos:hover {
+  border: 1px inset steelblue !important;
+}
+
+.titulo_curso {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_curso > p {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.litle {
+  font-size: 17px;
+}
+
+.link_curso {
+  text-decoration: none;
+}
+
+.Rocktseat {
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+
+.alura {
+  padding-top: 7rem;
+}
+
+.pading {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .geral {
+    flex-direction: column-reverse;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_logo {
+    width: 6rem;
+    padding-block: -1rem;
+  }
+  .white {
+    text-align: center;
+    margin: 0;
+  }
+
+  .pai_inicio {
+    padding-block: 3.5rem;
+    line-height: 220%;
+    margin: 0 !important;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
+  .li_cursos {
+    width: 90%;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .geral_cursos {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    padding: 0;
+    padding-top: 10rem;
+  }
+}
+
+@keyframes animation-alura {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-0.5vh);
+  }
+}

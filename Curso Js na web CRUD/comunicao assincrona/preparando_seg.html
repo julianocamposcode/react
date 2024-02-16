@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Js na web: CRUD com javascript assíncrono</title>
+	<link rel="stylesheet" href="../../Curso React Entendendo como a biblioteca Funciona/assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/128/8945/8945795.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+	
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="https://cdn-icons-png.flaticon.com/128/8945/8945795.png" alt="">
+
+			<p class="title" style="margin-left: 5rem">Js na web: CRUD com javascript assíncrono</p>
+
+		</div>
+
+		
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+			
+			<select name="aulas" id="select">
+				<option value="1">01. Comunicação assíncrona</option>
+				<option value="2">02. Fetch API</option>
+				<option value="3">03. Criar e remover clientes</option>
+				<option value="4">04. Editar dados</option>
+				<option value="5">05. Async/Await</option>
+			</select>			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="../apresentacao.html">01 Apresentação</a>
+						<span>2min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="projeto.html">02 Projeto inicial do curso</a>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="preparando_pri.html">03 Preparando o ambiente</a>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="#">04 Preparando o ambiente</a>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="exibindo_dados.html">05 Exibindo dados </a>
+						<span>8min</span>
+					</aside>
+				</li>   
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="criando_template.html">06 Criando template</a>
+						<span>13min</span>
+					</aside>
+				</li>     
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="promisses.html">07 Lidando com promisses</a>
+						<span>11min</span>
+					</aside>
+				</li>      
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>        
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">                   
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">Preparando o ambiente</h1>
+			
+			<a href="exibindo_dados.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+		<section class="transcricao projetos">
+			
+			<p class="p">Na aula seguinte vamos usar o json-server para simular um servidor e consumir dados.</p>
+			<p class="p">O json-server está listado como dependência no package.json que é o arquivo onde encontramos todas as bibliotecas externas que estamos usando no projeto, então ao fazer npm install dentro pasta <b>admin</b>, que é a pasta do projeto(vamos ver essa parte em video) é feito o download do json-server automaticamente.</p>
+			<p class="p">A que se notar que o comando que executamos durante a aula para subir o servidor, json-server --watch db.json, deve ser realizado dentro da pasta do projeto a <b>admin</b>, caso contrário o comando não vai ser reconhecido.</p>
+			<p class="p">
+				<b>
+					Outra informação importante é que para funcionar localmente ao invés de rodarmos o comando <code>json-server --watch db.json</code> igual é feito na aula, temos que rodar o comando com npx na frente:
+				</b>
+			</p>
+			<p class="p"><b>npx json-server --watch db.json</b></p>
+
+			<p class="p">E depois para subir o servidor fazemos <code>json-server --watch db.json</code> como é feito na aula.</p>
+		</section>
+
+		<article class="mostrar hidden">
+			<p class="texto_continuar p">
+				<hr class="hr">	
+				<i>continuar lendo</i>
+				<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+				<hr class="hr_two">
+			</p>
+		</article> 
+
+	</section>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../Curso React Entendendo como a biblioteca Funciona/assets/script.js"></script>
+<script src="../main.js"></script>
+<script>
+	const opitions = document.querySelectorAll('option'); 
+
+	opitions[0].selected = () => {}
+
+</script>
+</body>
+</html>

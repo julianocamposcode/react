@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto.html">Projeto da aula anterior</a>
+					</aside>
+				</li>
+
+				<li>					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Criando Componentes</a>
+						<span>15min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="plugins.html">02 Praticando e utilizando plugins</a>
+						<span>13min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="integrando.html">03 Integrando o js</a>
+						<span>9min</span>
+					</aside>
+				</li>				
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">03 Integrando o js</h1>
+			
+			<a href="../estilizando/index.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/integrando o js.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Como a gente viu então, a gente consegue componentizar nossos elementos, se a gente fizer aquele exercício de ir componentizando temos a mesma visualização aqui. Tenho meu formulário, meus três títulos, e o jsx transforma os nossos componentes que escrevemos nessa extensão para uma 
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					coisa que o browser entende. Também podemos ver que um componente meu, e aí a gente está estendendo a classe componente, por isso que apesar de chamar jxelement estava chamando de componente, porque a gente herda da classe componente, um componente meu que criei pode pedir na hora de renderizar para ter componentes filhos que também são meus, criados pelo desenvolvedor da aplicação, isso dá flexibilidade no sistema.
+
+				</p>
+				<p class="p">
+					
+					[00:48] Mas se você já está mais acostumado com JavaScript, se tem uma ideia de boas práticas de programação, pode ver que tem aqui três elementos repetidos, li com card de nota, e se precisar fazer qualquer alteração nessa visualização a gente vai ter uma repetição de código.
+				</p>
+				<p class="p">
+					[01:10] Vamos falar que no meu card antes vou ter uma div que vou colocar apesar de não ser super semântico na html, na minha categoria. Então, vamos falar que essa nota vai ser uma nota de trabalho, e a nota de baixo também é uma nota de trabalho, mas a terceira nota vai ser de estudos, alguma coisa assim.
+				</p>
+				<p class="p">
+					[01:33] A gente tem três notas, mudamos a maneira que queríamos visualizar, só que tive que alterar três vezes para ter o mesmo componente. Você poderia falar que posso mexer no card da nota, vou dar um F12 para navegar até ele, e se mudasse aqui ainda estaria mudando um único elemento de uma vez, mas tenho que mudar toda essa lista.
+					
+				</p>
+				<p class="p">
+					[02:00] Podem existir outros motivos, posso ter uma lista com vários itens, mas cada item com vários filhos, irmãos dentro dela, para não ter esse tipo de repetição no código. Como a gente falou, o jsx é uma extensão do JavaScript. Por que a gente não usa um loop para pedir para o jsx desenhar aqui, renderizar na tela essa lista, como a gente está vendo aqui.
+				</p>
+				<p class="p">
+					[02:26] Se eu tivesse um loop, não vou precisar do li. Só vou precisar do primeiro, porque vou ter um loop que vai passar as informações de categoria para essa div onde estou exibindo a categoria do card.
+				</p>
+
+				<p class="p">
+					[02:42] E como a gente faz isso? Como coloco JavaScript na sintaxe de renderização das tags html? A forma que a gente tem para fazer é abrir as chaves, uma vez que abre chaves tudo que colocar aqui dentro vai ser do código JavaScript. Posso dar um console.log, pedir para ele imprimir alguma coisa falando que aqui é uma tag JavaScript. Não é bem uma tag, mas vou deixar assim.
+				</p>
+				<p class="p">
+					[03:14] Se eu voltar no nosso navegador e vier no console, a gente pode ver uma tag js. Tudo que estiver entre chaves dentro do return, com essa sintaxe parecida com html, vai ser interpretado como JavaScript, e dessa maneira conseguimos colocar os loops e fazer as interações que a gente precisar, inclusive chamar funções e assim por diante.
+				</p>
+
+				<p class="p">
+					[03:38] Se aqui dentro tenho o código JavaScript e queria ter três itens na minha lista, posso fazer um for. Então, for let i igual a zero, i menor que três, e i mais mais, e aqui teria o for e retornaria a lista da maneira que estou querendo.
+				</p>
+				
+				<p class="p"> 
+					[04:03] Na verdade, não. O jsx é uma extensão do JavaScript, mas não me deixa fazer esse tipo de for. Tem algumas limitações. Não é tudo do JavaScript que você vai conseguir fazer. Se tiver uma função para chamar aqui dentro, poderia chamar numa boa. E se quero percorrer uma lista, ainda mais uma lista que me desse as categorias, posso usar um array e as funções de array para isso.
+				</p>
+				<p class="p">
+					[04:25] Então, ao invés do for, já que o for não funciona, vou criar um array e vou chamar o método of, e aqui posso colocar os itens que quero, tinha dois que eram de trabalho, vamos copiar aqui e colar, dois de trabalho e um de estudos. Esse array of está me criando um array com esses três valores aqui dentro. E se quero percorrer um array posso usar um map. Vou dar um .map e vai ser um método que posso chamar.
+				</p>
+
+				<p class="p">
+					[05:00] Dessa maneira a gente pode ver que o jsx não está mais reclamando. Está reclamando porque o li está fora de escopo, mas se eu tirar ele podemos ver que o ul não está mais reclamando de nada. Essa tag pode fechar e se eu pedir para formatar ele vai colocar tudo numa linha só, porque ele está achando que a linha é pequena e colocou numa só.
+				</p>
+
+				<p class="p">
+					[05:22] Dessa maneira não está reclamando. Mas se eu voltar no navegador ele fala que estou fazendo o map, mas não estou fazendo nada, está faltando um parâmetro. Da maneira que funciona vai pegar cada um desses itens e vai chamar uma função usando o item como parâmetro. Ele vai pegar cada uma das categorias, como a gente chamou, e vai passar para uma função. Vou abrir o corpo da função.
+				</p>
+
+				<p class="p">
+					[05:47] Estou recebendo um parâmetro e abri o corpo da função. Vou precisar retornar o elemento que quero que ele desenhe, renderize para mim. Vou dar um return, abrir os parênteses porque quero que seja um retorno de múltiplas linhas, e aqui dentro vou colar a li. Se eu formatar ele vai quebrar de novo a linha e temos para cada item aqui vou iterar eles, passar para dentro de uma categoria, passar como um parâmetro chamado categoria para uma função anônima, e dentro dela vou retornar uma lista com uma div e um card nota.
+				</p>
+				<p class="p">
+					[06:24] Se eu voltar agora, a gente pode ver que tenho três itens, só que todos estão como trabalho, então aqui ele está entendendo esse texto como uma string, não está entendendo que ele é esse valor. O último deveria ser estudo, mas está como trabalho ainda.
+				</p>
+				<p class="p">
+					[06:40] Como faço para usar uma variável dentro do jsx? Preciso que ele entenda que quero usar uma variável e não um texto. Se eu colocasse só a categoria, por exemplo, ele continua entendendo que é uma string, porque ele só vai entender as variáveis que estiverem entre chaves. Tenho que abrir e fechar chaves, se eu voltar no navegador vai estar trabalho, e estudos. Conseguimos iterar sobre arrays, chamar funções do JavaScript, e dentro dessa sintaxe, mas lembrando que algumas operações não vão fazer sentido, não consigo chamar um for diretamente. Preciso ter um array e iterar sobre esse array, lembrando que o map sempre devolve uma lista.
+				</p>
+				<p class="p">
+					[07:20] Ele está pegando cada um dos retornos, jogando dentro de uma lista e devolvendo uma lista, um array de listas para a ul, para conseguir aí sim renderizar. Se eu usasse outra função que existe aqui para iterar sobre um array que é o for it, ele não me dá um erro, mas também não vai desenhar, porque apesar de estar retornando aqui, o for it não está juntando numa lista para passar para a ul, então tenho que usar o map para desenhar bonitinho.
+				</p>
+				<p class="p">
+					[07:48] É dessa maneira que a gente consegue jogar JavaScript no meio da sintaxe jsx e aí começar a deixar nosso template um pouco mais dinâmico, tirando uma repetição de código para quando eu precisar mudar qualquer coisa tiro daqui, apago e está tudo feito, e a gente continua com o projeto limpo.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</section>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[1].selected = () => {}
+	</script>
+</body>
+</html>

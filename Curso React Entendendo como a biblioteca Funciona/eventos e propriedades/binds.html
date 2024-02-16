@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Lidando com eventos</a>
+						<span>12min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="binds.html">02 Binds</a>
+						<span>5min</span>
+					</aside>
+				</li>
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">02 Binds</h1>
+			
+			<a href="../estado e reinderizacao/projeto_final.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/bind.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Vamos retomar passo a passo quais os erros, o que aconteceu quando tentamos usar no nosso código o handle mudança título. Ele está tentando chamar o this e ele está dando como indefinido. Vou voltar no título e tentar digitar alguma coisa. Como ele é indefinido,
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					a gente foi explorar o porquê desse problema e falamos que o this dentro do JavaScript é dinâmico, ele depende do contexto onde é chamado.
+				</p>
+				<p class="p">
+
+					[00:30] Para explorar isso tinha feito aqui. Vou retomar aqueles passos. Tinha declarado uma classe pessoa. Vou puxar no meu histórico. Seta para cima, puxo o histórico. Tinha declarado esse pessoa que tinha o construtor, que tinha um atributo chamado oi e instanciado uma pessoa. Vou voltar lá. Let p igual a new pessoa. Vou chamar.
+				</p>
+				<p class="p">
+					[01:05] Vou limpar meu notebook. Se eu chamar o p falar vai me retornar o oi como tínhamos na propriedade de fala. Se eu passo a referência para o método da instância de p para outro lugar, se crio outro lugar, vou chamar de evento e passo para ele o p falar, a referência para o método de falar do objeto p, na hora que tento chamar o evento e executo, ele fala que o this foi indefinido. Ou seja, dentro desse contexto o this é indefinido, mas dentro do outro, onde dou o p falar, ele vai ser definido.
+				</p>
+				<p class="p">
+					[01:50] O que acontece é que quero poder chamar esse evento e não ter o problema do this. Como o this é dinâmico dentro do JavaScript, na hora que passo a referência para o método falar da instância de p preciso falar para ele que na hora que ele for executar essa função, esse método, associa ele a esse objeto.
+				</p>
+				<p class="p">
+					[02:18] Vou limpar aqui, dar enter de novo, e se eu tentar ter um evento 2, vou chamar o p falar, vou dizer que quando for chamar o método falar, associa ele com esse objeto, o this que tem lá dentro com esse objeto. Para isso tenho que fazer um bind, essa associação. Dentro da associação vou passar o objeto que estou associando.
+
+				</p>
+				<p class="p">
+					[02:47] Então, quero fazer um bind do p. Na hora que faço isso e tento chamar o objeto 2, ele sim vai me dar o oi. Dentro desse evento 2, como associei ao p, então o this que está lá dentro é o objeto, ele não perdeu a definição. É isso que vamos fazer toda vez que formos lidar com eventos dentro do react. Vou ter que fazer sempre essa associação, esse bind entre o método que você quer chamar pertence ou está associado com essa instância, então usa os atributos dessa instância.
+				</p>
+
+				<p class="p">
+					[03:22] Poderia passar qualquer outra coisa. Na hora de passar o bind poderia ter uma segunda instância de pessoa, passar para ela, não seria problema nenhum, mas no nosso caso vamos voltar no formulário e quero que na hora que for chamar o evento de on change falar para ele chamar o método, mas associa ele, faz o bind, com a instância que está sendo criada. Instância vai ser essa própria instância onde está sendo criado, onde o this faz sentido.
+				</p>
+				<p class="p">
+					[03:58] Se a gente fizer isso e voltar, abrir o console de novo, se eu começar a digitar o título, novo título vai ser chamado certinho. Ele está imprimindo do formulário cadastro na linha 12, é o console log no this título, então está conseguindo, está entendendo quem é o this que ele tem que chamar, porque fizemos a associação, o bind. E você pode ver que vai cair muito em erro de bind, porque é muito comum a gente esquecer essa parte de fazer a associação na hora que você vai chamar o evento, ele dá o this como undefined, é legal sempre lembrar de fazer essa associação porque o this no JavaScript é dinâmico.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[3].selected = () => {}
+	</script>
+</body>
+</html>7

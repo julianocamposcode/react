@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js na web: CRUD com javascript assíncrono</title>
+    <link rel="stylesheet" href="../../Curso React Entendendo como a biblioteca Funciona/assets/style.css">
+    <link rel="stylesheet" href="../../NLW Copa/assets/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/128/8945/8945795.png">
+</head>
+<body>
+    <!-- MENU LATERAL -->
+    
+    <label for="segundo">
+        <img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+    </label>
+
+    <input class="hidden" type="checkbox" id="segundo">
+    
+    
+    <header>
+        <label for="primeiro">
+            <img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+        </label>
+
+        <input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+
+        <div>
+            <img class="logo" style="width: 2rem;" src="https://cdn-icons-png.flaticon.com/128/8945/8945795.png" alt="">
+
+            <p class="title" style="margin-left: 5rem">Js na web: CRUD com javascript assíncrono</p>
+
+        </div>
+        <nav>
+            <article class="alinhar">
+                <img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+                <p>AULA ATUAL</p>
+
+            </article>
+
+            <select name="aulas" id="select">
+                <option value="1">01. Comunicação assíncrona</option>
+                <option value="2">02. Fetch API</option>
+                <option value="3">03. Criar e remover clientes</option>
+                <option value="4">04. Editar dados</option>
+                <option value="5">05. Async/Await</option>
+            </select>
+
+            <article class="atividades">
+                <img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+                <p>ATIVIDADES</p>
+                
+            </article>
+            <ul>
+                <li style="background: #282c2f">
+                    <img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+                    <aside class="fileira">
+                        <a class='modules' href="#">01 Criando um cliente</a>
+                        <span>16min</span>
+                    </aside>
+                </li>
+                <li>
+                    <img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+                    <aside class="fileira">
+                        <a class='modules' href="deletando_cliente.html">02 Deletando um cliente</a>
+                        <span>7min</span>
+                    </aside>
+                </li>   
+                <li>
+                    <img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+                    <aside class="fileira">
+                        <a class='modules' href="api_botao.html">03 Conectando API com botão</a>
+                        <span>10min</span>
+                    </aside>
+                </li>     
+                <label for="check" id="notu">
+                    <article id="button" class="box">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+                        <p>Modo Noturno</p>
+                    </article>
+                </label>        
+                <input type="checkbox" id="check" class="checkbox">
+                <a class="home" href="../../index.html">                   
+                    <div class="dash">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+                        <p>Voltar para a dashboard</p>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cabecal">
+
+            <h1 class="title_top">01 Criando um cliente</h1>
+            
+            <a href="deletando_cliente.html"> 
+                <img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+            </a>
+
+        </section>
+
+        <video controls="" src="../videoaulas/Criando um cliente.mp4"></video>
+
+        <section class="transcricao cards">
+
+            <div class="carde texto2" style="background: none; margin: 3rem 0 0 0">
+                <img src="https://cdn-icons-png.flaticon.com/128/8945/8945795.png" class="img_card" alt="">
+                <div class="textos" style="background: none;">
+                    <h5 class="cetralize">Js na web: CRUD com javascript assíncrono</h5>
+                    <hr>
+                </div>
+            </div>              
+        </section>
+    </section>          
+    <article class="mostrar hidden">
+        <p class="texto_continuar p">
+            <hr class="hr"> 
+            <i>continuar lendo</i>
+            <img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+            <hr class="hr_two">
+        </p>
+    </article> 
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../Curso React Entendendo como a biblioteca Funciona/assets/script.js"></script>
+<script src="../main.js"></script>
+<script>
+    const opitions = document.querySelectorAll('option'); 
+
+    opitions[2].selected = () => {}
+
+</script>
+</body>
+</html>

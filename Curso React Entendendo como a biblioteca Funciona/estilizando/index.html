@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li style="background: #282c2f">					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Estilizando componentes</a>
+						<span>7min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="conflito.html">02 Conflito de nomes</a>
+						<span>7min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="organizando.html">03 Organizando o projeto</a>
+						<span>10min</span>
+					</aside>
+				</li>				
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">01 Estilizando componentes</h1>
+			
+			<a href="conflito.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/estilizando componentes.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] A gente fez aqui nossa lista, temos aquela parte da renderização através do loop, do map que está rodando no JavaScript, mas você pode ver que ele deu um erro no console. Está falando que cada filho de lista deve ter uma chave única.Essa chave, esse key, está inclusive 
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					entre aspas porque é uma propriedade que a gente tem que colocar na nossa lista quando estamos renderizando na parte de loops.
+				</p>
+				<p class="p">
+					[00:23] Se eu vier no meu código, na parte de lista de notas, toda vez que a gente tem um loop desse tipo, eu uso o elemento pai que a gente retorna, ele tem que ter essa propriedade que a gente chama de key. Inclusive ele já trouxe para mim.
+				</p>
+				<p class="p">
+					[00:35] Essa key é um identificador único. A gente coloca ela como se fosse um atributo que nem a gente estava colocando no JavaScript, no html. Se eu voltar no meu formulário tenho meu input e o tipo dele, que é texto. Tenho o place holder, que é o título, e aí consigo colocar essa propriedade do jsx aqui, esse atributo, dentro.
+				</p>
+				<p class="p">
+					[01:02] Ele quer que esse atributo seja único para cada elemento que ele está renderizando aqui, isso porque facilita o JavaScript e o react mais para frente entender quais elementos sofrerão alteração ou não e quais ele tem que redesenhar. Ele precisa dessa key porque usa ela para identificar quais são os elementos em cada chave, que tem que ser única justamente por ser um identificador, e se esse elemento sofre alguma alteração o react consegue saber qual ele tem que redesenhar e não redesenha a lista inteira dessa maneira.
+				</p>
+				<p class="p">
+					[01:32] A gente precisa colocar essa key, essa chave para identificar os elementos da lista. Vou aproveitar que o map passa o index também e vou usar esse index como identificador. Minha key vai ser igual o index do array. Como estou usando uma variável, coloco que atribuo essa chave com o valor dessa variável index que estou retornando do map.
+
+				</p>
+				<p class="p">
+					[01:57] Se eu fizer isso e voltar ele não me dá mais o erro, é uma coisa que você não vai ver no inspetor. Se eu abrir a lista, a section, minha ul e li, ela não vem marcada com nada. É uma coisa do funcionamento interno do react.
+				</p>
+
+				<p class="p">
+
+					[02:12] Agora que a gente já tirou esse erro, saímos do console, como a gente continua o projeto? Por enquanto está bem feio e a gente não tratou de estilização ainda. Como a gente faz a estilização no aplicativo do react? Para isso vamos usar o CSS assim como usaríamos se fosse um html puro.
+				</p>
+				<p class="p">
+					[02:35] Vou pegar aqui e vou editar o card nota. No nosso section, header e p vou querer colocar as classes. Para isso vou criar um arquivo CSS, dentro dos meus componentes, que é específico para o notas jsx. Nesse caso, é muito comum criar uma pasta. Vou dentro da pasta de componentes criar uma pasta chamada card nota e dentro dela vou colocar o card nota, o jsx, minha classe que representa o componente, vou mover ele, e dentro dessa pasta ainda vou pedir para criar um estilo.css. O arquivo CSS que vai estilizar esse componente específico.
+				</p>
+
+				<p class="p">
+					[03:16] Vou abrir um novo arquivo, chamar de estilo CSS, e aí aqui é um arquivo CSS normal, então posso criar minha classe card nota, que vai ser minha classe mãe, a section. Para eu atribuir aquela classe do CSS para esse arquivo, vou pegar o card nota e colocar um color só para ver. Para atribuir o estilo para essa section vou adicionar um class name.
+				</p>
+
+				<p class="p"> 
+					[03:50] A gente poderia adicionar o class, que é o atributo do html, o padrão, só que como no react a gente usa o class como palavra-chave reservada para declarar uma classe do JavaScript de fato, tem essa outra propriedade que é o class name.
+				</p>
+				<p class="p">
+					[04:03] Se você declarar como class ele vai funcionar. Por exemplo, se eu vier aqui e declarar que o class nele é igual card nota, vamos copiar o nome e vamos colocar como string, meu class é igual card nota. Se eu salvar isso e voltar para o meu navegador, você vai ver que ele vai falar se você não quis colocar class name. Apesar de que se procurar pelo card o class está marcado, ele entendeu que é uma classe do CSS que quero adicionar.
+				</p>
+
+				<p class="p">
+					[04:36] Mas para não dar conflito entre as palavras-chave do meu class e desse class onde estou declarando a classe do card nota, e aí o nome também não ajuda, da classe do JavaScript card nota e a classe do CSS, ele usa class name. E se eu usar class name e voltar, ele continua como class card nota, mas se eu vier no console o erro sumiu. Se eu atribuir CSS ao meu estilo, a um nó do html ou do jsx, preciso colocar o class name ao invés do class.
+				</p>
+
+				<p class="p">
+					[05:13] Só que você pode reparar que coloquei a cor do texto como roxo e ele não mudou, porque ele não conseguiu fazer o link entre esse arquivo do card nota e o estilo CSS, porque esse arquivo não conhece os outros arquivos. Se você lembrar dos cursos de JavaScript de linguagem que a gente teve, toda vez que a gente cria uma classe e um arquivo usando os módulos do JavaScript, inclusive o import e export são as definições, como a gente define os módulos, você pode ver que cada módulo é individual, não conhece, não deixa vazar informações para os outros, justamente porque a gente quer encapsular os comportamentos.
+				</p>
+
+				<p class="p">
+					[05:52] Então, aqui, preciso falar que esse módulo tem que conhecer a classe destino, tenho que importar o meu arquivo CSS, no ./ estilo.css. Agora sim ele vai conhecer as classes, as definições que estão dentro do arquivo CSS. Se eu voltar ele entendeu que tenho que linkar a classe com esse elemento, e assim a gente faz a estilização.
+				</p>
+				<p class="p">
+					[06:22] Como é só o estilo do CSS, vou copiar o estilo que tenho pronto e no próximo vídeo venho com o card inteiro estilizado da maneira como tinha pensado. É só CSS padrão, não vou ter nada de mais. Vou adicionar também no projeto o reset CSS porque senão cada navegador vai ter um espaçamento, uma margem, um padding diferente. Boa prática também do html trazer esse arquivo de reset do CSS para você ter uma página branca para trabalhar a estilização do site.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[2].selected = () => {}
+	</script>
+</body>
+</html>

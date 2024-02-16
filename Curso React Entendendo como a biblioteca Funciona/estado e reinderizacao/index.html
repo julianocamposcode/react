@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto_final.html">Projeto Final</a>
+					</aside>
+				</li>
+				<li style="background: #282c2f">					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Passando propriedades</a>
+						<span>14min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="propriedades.html">02 Mais propriedades</a>
+						<span>10min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="state.html">03 O State</a>
+						<span>17min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="conclusao.html">04 Conclusão</a>
+						<span>4min</span>
+					</aside>
+				</li>
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">01 Passando propriedades</h1>
+			
+			<a href="propriedades.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/passando propriedades.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Agora que a gente viu o handle mudança de título, a gente já sabe como fazer os próximos. Vou pegar o text área e fazer a mudança dele. Vou chamar o evento de on change, e dentro tenho que passar a referência para a função, o true método dessa instância do formulário que
+			</p>
+
+			<section id="hidden" class="none">
+				<p class="p">
+					quero que ele chame.
+				</p>
+				<p class="p">
+					Vou criar uma nova instância de um handler, ou seja, um handle da mudança do texto. Esse handle vai receber o evento e quero passar para ele que além do título vou ter uma nota, um texto, e quero que associe, só que com o meu outro atributo this.texto, porque o target desse evento vai ser diferente da mudança do título, já que tenho um evento sendo disparado por outro elemento no html.
+				</p>
+
+				<p class="p">
+					[01:05] Como a gente viu, para fazer a mudança do on change tenho que passar uma referência para o método, então this handle da mudança do texto. E aí tenho que fazer a associação, o bind, para ele saber quem é o this que tem que usar, já que o this do Java script é dinâmico, como a gente viu. Tem que fazer um bind dessa associação com a instância que foi criada, então dou um bind com o this. This handle mudança de texto bind this e dessa maneira vou ter o this texto sendo associado.
+				</p>
+				<p class="p">
+					[01:40] Também vou tirar o console.log que não preciso mais. Agora que tenho dois atributos sendo criados, dois atributos sendo preenchidos de acordo com os valores de mudança, quero chamar no submetido form a criação de um novo card, então vou também criar esse evento. Form cadastro vou chamar o onSubmit, também vou associar para um criar card, vou chamar para o this criar card. Ou criar nota.
+				</p>
+				<p class="p">
+					[02:15] Na hora de criar a nota vou ter que fazer a associação para saber quem é o this, para ter acesso às propriedades de título e texto que a gente já salvou. Então, criar card bind this. Agora que fiz essa associação preciso só criar o método. Vou chamar o método de criar nota, ele também vai ter o evento, mas não vou usar dessa vez, e vou dar um console.log para ter uma ideia de como vai sair, se está tendo acesso certinho. Então, um novo card, uma nova nota foi criada. Vou associar o this título e o this texto.
+				</p>
+				<p class="p">
+					[03:14] Esse criar nota também vai ser chamado, e só por uma questão de boas práticas de programação, de orientação a objeto, vou declarar esses três métodos como sendo privados, já que não quero que nenhuma instância fora dessa classe consiga chamar. Vou colocar o underline em volta de todos eles.
+					
+				</p>
+				<p class="p">
+					[03:35] Lembrando que isso é só uma convenção, não é uma coisa que vai ser reforçada pelo próprio JavaScript. Toda vez que temos esse evento de criar nota sendo chamado no submit vou voltar para o navegador, criar uma nova nota, se eu der criar nota ele deu um reload, porque preveni o evento de ser de recarregar página, lembrando que toda vez que a gente dá um submit no formulário o comportamento padrão dele é recarregar a página, e tem vezes que não queremos recarregar, queremos que ela fique estável, porque já estou gerenciando todos os dados que preciso sem precisar recarregar a página.
+				</p>
+
+				<p class="p">
+					[04:10] O que vou fazer é pegar o evento e dar um prevent default, quero prevenir, que ele não execute o comportamento padrão. Outra coisa que posso fazer inclusive nos outros eventos é evitar a propagação desse evento na minha árvore do html, no dom. Então, também quero que esse evento pare a propagação, então stop propagation.
+				</p>
+				<p class="p">
+					[04:35] Como ele acontece para todos os eventos que os elementos html disparam vou colocar no handle mudança de texto e título além do criar nota. Agora sim, se eu voltar lá e criar uma nova nota, a gente pode ver que uma nova nota foi criada, mas ele não está reconhecendo o método da string, essa template string que coloquei aqui, então vamos fazer uma associação direta, um mais. Vamos tirar as chaves, e o jsx não tem pelo visto template strings, temos que fazer a associação direto.
+				</p>
+
+				<p class="p">
+					[05:18] Se a gente voltar lá e criar uma nova nota, uma nova nota foi criada, esse espaço deu certo. A gente já tem uma nova nota sendo criada, temos o evento sendo disparado, acesso aos atributos, mas como vou guardar de verdade as informações dela? Como deixo persistente, ou que pelo menos reflita na lista de cards?
+				</p>
+				<p class="p">
+					[05:43] Para isso refletir, alguém que saiba da lista de cards precisa saber que a nota foi criada. Então, se alguém que sabe que isso existe precisa saber que a nota foi criada pelo formulário não é o próprio formulário que vai gerenciar isso, concorda? Se eu vier no inspetor vou baixar, abrir minha divroot e minha section, tenho o formulário e a lista de notas. Preciso que a lista de notas fique sabendo de lago que o formulário fez. Na hora que o formulário for chamado preciso atualizar lista de notas.
+				</p>
+				<p class="p">
+					[06:18] O único elemento em comum entre esses dois, se a gente olhar o código, é o elemento pai deles, que é o app.js. Quero chamar o criar nota dentro do app.js. Vou ter um método aqui, criar nota, esse método vai ser público, porque vou passar para o meu formulário usar, vou ter o método criar nota, esse método vai receber um título, um texto, e vou de fato criar uma nova nota aqui dentro. Para isso, vou dar um console.log para ver se está sendo chamado de verdade.
+				</p>
+				<p class="p">
+					[06:58] Tenho então esse método criar nota, que é do meu app, e esse app conhece minha lista, então ele poderia informar depois, passar a informação numa nova nota que foi criada para minha lista de notas, só que então como faço para o meu formulário de cadastro chamar o método que está no pai dele, que está nesse método?
+				</p>
+				<p class="p">
+					[07:20] Para isso, a gente vai ter que passar um método para o formulário. A gente não está vendo no nosso formulário que quando chamamos o input, que é o filho dele, que também é uma classe, um elemento do jsx, não faço uma série de propriedades para ele, uma série de atributos? Então o que me impede de passar um atributo personalizado para o meu formulário?
+				</p>
+				<p class="p">
+					[07:42] O que eu vou fazer é que no meu app.js, na hora que eu for criar um formulário falo que na hora que for criar uma nota quero que chame, vou associar, o criar nota que tenho aqui. Estou falando que o formulário vai ter uma propriedade, por isso falei que propriedades têm um nome especial, não quis chamar esse this título de this propriedade porque aqui estou falando que meu formulário de cadastro tem uma propriedade do react que chama criar nota que estou associando ao criar nota. E já que defini que quero ter essa propriedade, como associo ela ao meu formulário?
+				</p>
+				<p class="p">
+					[08:30] Já que ela é uma propriedade, vou receber como parâmetro do meu construtor, e aí o mais comum é chamar isso de props. Vou receber no construtor minhas propriedades e passo meu componente que a gente herda, que também precisa dessas props. E uma vez que tenho elas consigo acessar diretamente. Então, no criar nota vou chamar o this props, essa propriedade que a gente tem criar nota, que a gente criou como propriedade. Esse criar nota vai ser referenciado por essa propriedade que a gente criou.
+				</p>
+				<p class="p">
+					[09:12] Para esse criar nota funcionar preciso passar um título e um texto, então esse criar nota vai receber um título e o this texto. Dessa maneira consigo acessar uma propriedade que me foi passada na hora de construir o elemento, essa é a maneira que a gente cria propriedades do react aqui.
+				</p>
+				<p class="p">
+					[09:35] Vamos ver isso funcionando. Tenho meu card e vou colocar um novo título para um card novo. Na hora que dou o criar nota a gente vai ver no console que uma nova nota foi criada, com um novo card. No app js na linha 9. A gente pegou aqui na linha 9 do meu app. A gente está criando um método da instância do app e passando como propriedade e agora sim isso é uma propriedade, o js fala que é um atributo, mas a comunidade normalmente chama de propriedade, vamos passar como propriedade para o meu formulário, e lá recebo as propriedades do construtor, passo para o meu pai e consigo acessar elas através desse atributo que chamei de propriedades. This props criar nota, e aí consigo passar as informações que preciso para o elemento pai.
+				</p>
+				<p class="p">
+					[10:30] O que ficou faltando é que uma vez que tenho acesso ao elemento pai, meu elemento pai precisa pegar essas informações e guardar em algum lugar para avisar os elementos filhos que dependem das informações, é isso que vamos fazer daqui a pouco.
+				</p>
+			</section>
+			
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[4].selected = () => {}
+	</script>
+</body>
+</html>

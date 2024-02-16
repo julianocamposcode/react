@@ -1,0 +1,182 @@
+	<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Curso React | Entendendo como a biblioteca funciona</title>
+		<link rel="stylesheet" href="../assets/style.css">
+		<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+	</head>
+	<body>
+
+		<!-- MENU LATERAL -->
+
+		<label for="segundo">
+			<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+		</label>
+
+		<input class="hidden" type="checkbox" id="segundo">
+		
+		
+		<header>
+			<label for="primeiro">
+				<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+			</label>
+
+			<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+			<div>
+				<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+				<p class="title">React | Entendendo como a biblioteca funciona</p>
+			</div>
+
+			<nav>
+				<article class="alinhar">
+					<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+					<p>AULA ATUAL</p>
+
+				</article>
+
+				<select name="aulas" id="select">
+					<option value="1">01. Criando o projeto</option>
+					<option value="2">02. Componentizando o sistema</option>
+					<option value="3">03. Estilizando com componentes</option>
+					<option value="4">04. Lidando com eventos e propriedades</option>
+					<option value="5">05. Controlando o estado e reinderização</option>
+				</select>
+				<article class="atividades">
+					<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+					<p>ATIVIDADES</p>
+					
+				</article>
+				<ul>
+					<li>
+						<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+
+						<aside class="fileira">
+							<a class='modules' href="../index.html">01 introdução</a>
+							<span>3min</span>
+						</aside>
+					</li>
+					<li>
+						<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+						<aside class="fileira">
+							<a class='modules' href="criando_projeto.html">02 Criando o Projeto</a>
+							<span>14min</span>
+						</aside>
+					</li>
+					<li style="background: #282c2f">
+						<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+						<aside class="fileira">
+							<a class='modules' href="limpando_projeto.html">03 Limpando o Projeto</a>
+							<span>6min</span>
+						</aside>
+					</li>
+					<li>
+						<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/7870/7870576.png" alt="">
+						<aside class="fileira">
+							<a class='modules' href="aprendemos.html">04 O que aprendemos?</a>
+						</aside>	
+					</li>
+					<label for="check" id="notu">
+						<article id="button" class="box">
+							<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+							<p>Modo Noturno</p>
+						</article>
+					</label>		
+					<input type="checkbox" id="check" class="checkbox">
+					<a class="home" href="../../index.html">					
+						<div class="dash">
+							<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+							<p>Voltar para a dashboard</p>
+						</div>
+					</a>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="cabecal">
+
+				<h1 class="title_top">03 Limpando o Projeto</h1>
+				
+				<a href="aprendemos.html"> 
+					<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+				</a>
+
+			</section>
+
+			<video controls="" src="../videoaulas/curso 1/3-limpando o projeto.mp4"></video>
+
+			<section class="transcricao">
+
+				<h2 class="p">Transcrição</h2>
+
+
+				<p class="p">
+					[00:00] A gente viu que conseguimos criar nosso aplicativo do react usando create react app, e a gente tem aqui nossa aplicação rodando, o frontend rodando no local host 3000 a partir do momento que demos o npm start. Precisamos começar agora a manipular essa aplicação, esse código, para 
+				</p>			
+
+				<section id="hidden" class="none">
+					<p class="p">
+						deixar do jeito que a gente quer e para ter as interações que a gente gostaria. Só que antes disso vamos fazer uma limpeza na casa, porque toda vez que a gente cria código automaticamente, que a gente usa algum desses pacotes, é muito comum vir código a mais do que a gente vai precisar.
+					</p>
+					
+					<p class="p">
+						[00:38] Por exemplo, a nossa aplicação não vai ser essa aplicação que está rodando na tela com o logo. Vou apagar esse código porque a gente vai ver daqui a pouco como vai ser a aplicação de fato. Uma vez que tenho isso apagado, não vou precisar mais, não estou usando nem o svg e nem o CSS, então vou apagar esses também.
+					</p>
+					<p class="p">
+						
+						[00:55] Posso vir na hierarquia, apagar o CSS, a aplicação de testes que não vamos fazer testes, o logo svg, o meu service work, e o setup de testes. Todos esses vou apagar, vou ficar só com o que preciso, com o index js, o index CSS, que serve de reset para algumas coisas, e a aplicação js.
+					</p>
+
+					<p class="p">
+						[01:28] Se a gente olhar aqui, ele está importando o react, apesar de falar que não estou usando, e dentro dele tenho minha função que chama de app e retorna a função app para o index js que é o renderizado, o componente que está sendo renderizado. Dá para ver que essa maneira de escrever uma função que tem um retorno, no nosso caso como vimos pode ser uma coisa muito parecida com uma tag html, se eu colocar um h1 ele vai desenhar na tela, falando que não existe.
+						
+					</p>
+
+					<p class="p">
+						[02:08] Antes de desenhar na tela preciso mudar em alguns lugares. Ele está procurando no index js, o service worker que a gente apagou. Ele não vai achar e vai dar erro de import. Além disso está falando que não é definido, então vou apagar essa parte. Nenhum erro. Esse componente jsx é uma função que tem um retorno, essa sintaxe html estranha.
+						
+					</p>
+					<p class="p">
+						[02:47] Essa sintaxe html no meio de um código JavaScript, se você pegar o JavaScript não é muito comum, porque ele está desenhando, não está precisando de aspas. Como ele faz isso? Como ele está entendendo essas tags que a gente coloca no meio da aplicação?
+						
+					</p>
+
+					<p class="p">
+						[03:10] O que o react usa, agora que coloquei essa tag ele está falando que estou usando o react, o que é estranho porque não tenho nada do react aqui dentro, é que tenho o jsx. Eu tenho essa sintaxe especial, ou como ele mesmo fala na documentação é uma extensão da sintaxe do JavaScript, uma maneira fácil de declarar elementos dentro dos componentes do react.
+					</p>
+					<p class="p">
+						[03:35] A gente vai usar o jsx durante esse curso e nas aplicações que estivermos utilizando porque é uma sintaxe fácil de entender, é uma sintaxe como ele mesmo deixa na página declarativa, é para facilitar esse módulo declarativo. Tenho um componente que chamei de app, que declarou como sendo só uma função, e ele retorna tudo que quero que seja desenhado. Tenho esse app e quero desenhar dentro dele esses elementos.
+					</p>
+
+					<p class="p"> 
+						[04:13] Lembrando que se olharmos a documentação esse react é uma biblioteca JavaScript para criar interfaces de usuário. Outra explicação que vale a pena é que temos dois reacts. Não são dois de verdade, mas tem pessoas que fazem a separação entre react, seria essa lib que a gente vai usar para fazer a renderização, e React, que seria todo o ecossistema que está por trás.
+					</p>
+					<p class="p">
+						[04:48] Já que essa biblioteca onde a gente vai focar nesses cursos iniciais foi feita principalmente para interface de usuário, ela só é uma representação dos meus dados, do que quero mostrar. Ela serve como a estrutura do frontend. Mas como quero o frontend rico, cheio de interações, vou ter que fazer animação, salvar o estado localmente usando o local storage, ou alguma API, tenho vários componentes que a gente vai introduzindo dentro dessa lib de interface de usuário para deixar a experiência para o usuário melhor, por isso a gente faz a separação de react, que é todo esse ecossistema super complexo com um monte de cosias, e React, só a lib que faz o desenho da interface, que não tem a cara da interface gráfica.
+					</p>
+					<p class="p">
+						[05:48] É legal saber que vamos tratar nesse primeiro curso basicamente dessa lib de renderização e de como ela funciona. A gente já viu que o app js é o ponto de entrada e que essa sintaxe toda estranha que ele está usando é o jsx. A gente vai usar o jsx durante todo o curso.
+
+					</p>
+				</section>
+				<article class="mostrar">
+					<p class="texto_continuar p">
+						<hr class="hr">	
+						<i>continuar lendo</i>
+						<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+						<hr class="hr_two">
+					</p>
+				</article> 
+			</section>
+		</main>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="../assets/script.js"></script>
+	</body>
+	</html>

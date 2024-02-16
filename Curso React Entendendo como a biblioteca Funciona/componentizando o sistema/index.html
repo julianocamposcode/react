@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto.html">Projeto da aula anterior</a>
+					</aside>
+				</li>
+
+				<li style="background: #282c2f">					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="">01 Criando Componentes</a>
+						<span>15min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="plugins.html">02 Praticando e utilizando plugins</a>
+						<span>13min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="integrando.html">03 Integrando o js</a>
+						<span>9min</span>
+					</aside>
+				</li>				
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">01 Criando Componentes</h1>
+
+			<a href="plugins.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/4-criando componentes.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Como a gente viu, a gente vai trabalhar com o react e temos essa sintaxe estranha do jsx, inclusive quando a gente passa o mouse em cima no vs code ele já traz algumas anotações, como propriedade jsx e uma série de coisas de elementos e atributos que você pode ver depois
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">com calma.</p>
+				<p class="p">
+
+					[0018] Mas se a gente quer fazer nosso gerenciador de notas, o que a gente vai precisar para ele não é o h1, é um form. Vou abrir um formulário, coloco dois inputs, um do tipo text, input type igual a text. Por enquanto a sintaxe não muda. Quero um input do tipo text e um text área, para ser um pouco maior, ter mais texto para escrever o corpo da nota.
+				</p>
+				<p class="p">
+
+					[01:00] Esse text área vai ter nossa formatação, onde a gente vai colocar o texto. Se eu salvar isso, podemos ver que o create react app não está recarregando. Pode ver que está lendo infinitamente, não foi possível conectar o localhost, no meio do caminho caiu. Vou apertar "Ctrl + J", vou na parte de terminal, você pode ver que não tem nada aberto, o servidor caiu, por isso não estava reconhecendo. então, npm start, a gente pode voltar, ele vai carregar. Vamos fechar o jsx e deixar só a página. Temos o text área e o input.
+				</p>
+				<p class="p">
+					[01:47] Vamos fechar o terminal, temos o formulário com o text área e o input. Vamos colocar o place holder para saber o que são cada um desses campos. Vou colocar um place holder chamado título e outro place holder text área, vou quebrar uma linha, não preciso fechar a tag, text área vai ter um place holder que vai ser o escreva sua nota. Com ele, vamos ter nosso text área e o input. Vou colocar um botão porque vamos ter que submeter de alguma forma. Esse botão vai ser criar nota.
+
+				</p>
+				<p class="p">
+					[02:40] Não estou me preocupando com layout porque daqui a pouco vamos ver como lidar com ele. Quero mostrar essa ideia que consigo escrever um código que é muito similar ao html, apesar de ser dentro do jsx. Vamos formatar aqui. A gente sabe que é o jsx, são elementos dele quando coloco o input, o text área, o button, ele fala para a gente que são elementos do jsx, e como isso no final vai ser transformado em JavaScript, o react quando dá um npm start e está rodando no servidor, durante o hot reload, quando ele verifica que tem uma mudança no arquivo, quando for fazer o build do projeto, ele vai pegar a sintaxe declarativa que a gente tem aqui e vamos transformar em algo que o navegador entenda, porque ele não entende jsx.
+
+				</p>
+				<p class="p">
+					[03:30] Mas você pode ver aqui que se eu abrir o inspetor, vamos deixar ele na lateral, quero modo do celular, vamos tentar aumentar a fonte dele. E posso ver que na nossa árvore tenho o body, o html, uma div e o form. Só que a gente pode ver que não preciso digitar html, não preciso colocar os headers de estilo, de meta, de nada, só o app falando que quero um formulário, o react trata por trás dos panos de devolver essa árvore dentro da página de maneira que o browser entenda.
+
+				</p>
+
+				<p class="p">
+
+					[04:27] Outra coisa é que uma vez que tenho meu formulário para cadastrar as notas vou colocar uma lista que quero exibir essas notas. Vou ter que região, uma li, esse item vai ser o card onde vai ficar a nota, vou englobar dentro de uma section com um cabeçalho, dentro desse header vou colocar um h3 que vai ser o título, e aí vou ter embaixo do header o meu p que é o texto, o escreva sua nota.
+
+				</p>
+				<p class="p">
+					[05:03] Você pode ver que é muito fácil de entender o que está acontecendo, muito tranquilo. Pode ver que ele está me dando alguns erros. Ele está falando que não conseguiu computar. É uma palavra estranha para o JavaScript, que normalmente não é compilado, mas é justamente o processo de pegar o jsx e transformar em alguma coisa que o navegador entenda.
+				</p>
+
+				<p class="p">
+					[05:28] Ele não conseguiu fazer essa etapa de tradução para algo que o navegador entenda porque está falando que você tem elementos adjacentes que precisam ser capturados, enclausurados dentro de uma tag. Quando tenho meu app, ele está retornando a árvore de renderização. Tenho meu form, o input, text área, e por padrão todo componente do jsx, lembrando que nosso app apesar de ser função está marcado como componente do jsx, tem que devolver um único elemento pai. Ou seja, ele não pode devolver dois elementos irmãos, como o form e a ul, tenho que encapsular esses elementos em um elemento pai.
+				</p>
+
+				<p class="p"> 
+					[06:22] Vou colocar aqui uma section, poderia colocar uma section, uma div, o que eu quiser aqui dentro, vou encapsular o código, pedir para formatar, e tenho retornando um único elemento, que é a section, que engloba toda a área de renderização do elemento da aplicação. Minha aplicação devolve um elemento, que pode ter filhos. No caso da section ela tem filhos form e ul, e o ul tem o li, e o form input, text área e button. É mais ou menos assim que ele pensa.
+				</p>
+				<p class="p">
+					[06:58] Se eu voltar, temos nosso título, que seria o começo do card e o formulário para conseguir cadastrar as notas. Se eu olhar o html, na div section, tenho um form, o ul, o li com a section e assim por diante. Ele vai redesenhando para a gente os elementos.
+				</p>
+
+				<p class="p">
+					[07:27] Inclusive, posso vir aqui e colocar mais lis, copiei e colei, tenho três cards e ele trouxe para mim três lis, é dessa maneira que vai trabalhar. Só que olha como uma página super simples tem código, quanto jsx, elementos que declarei. O react com a ideia de facilitar a vida do frontend tem a ideia de componentizar todas as partes do layout, da visualização para reutilizar e facilitar a leitura da aplicação mais para a frente.
+				</p>
+
+				<p class="p">
+					[08:07] Para criar o componente, temos a função app, que é um componente, um elemento. A gente fala que é um elemento jsx, por isso estou chamando de componente o tempo todo. A gente quer pegar esse componente da aplicação e desenhar. Vou criar um novo arquivo. Vou abrir a hierarquia, dentro da pasta source vou criar uma nova pasta chamada componentes, é o comum que você vai ver por aí, e dentro dessa pasta vou criar um novo arquivo que vou chamar da minha lista de notas.
+				</p>
+
+				<p class="p">
+					[08:51] Já vou colocar o jsx ao invés de js porque vou trabalhar diretamente com jsx, então posso declarar na extensão do meu arquivo js, o js funciona também, mas o jsx deixa claro que é um componente do react. E aí se é um componente do react como declaro para um componente?
+				</p>
+				<p class="p">
+					[09:10] Primeiro vou precisar importar o react. Vou importar from react e aqui dentro vou trazer um componente. Nesse curso vamos trabalhar com componentes baseados em classe, por isso a gente viu que precisávamos saber de classes, é legal ter esse pré-requisito, porque vamos trabalhar com class components.
+				</p>
+				<p class="p">
+					[09:36] Vou fechar minha aba lateral, criar uma classe chamada lista de notas, já que o nome da classe normalmente é o mesmo nome do arquivo para facilitar a navegação, vou estender um componente do react. Ele já fez até o autoimport para mim, trouxe essa classe component do react. Ele trouxe para a gente a classe component do react, e aí posso abrir minha classe.
+				</p>
+				<p class="p">
+					[10:05] Se tenho minha classe lista de notas aqui, posso então usar ela no meu app, e aí a lista de notas é todo esse arquivo, toda a parte da ul. Vou copiar essa parte e nesse momento vou usar a lista de notas e vou fechar como se fosse uma tag. Dentro dele copiei o código, mas se eu só jogar não vai funcionar. Quando estou trabalhando com classe components, o react vê essa classe e vai tentar renderizar. Para isso, tenho que chamar o método render, vou ter que trazer o método render, ele já deu autocomplete, vou chamar o método e ele vai dar return em toda aquela árvore que a gente tem da ul. Vamos pegar todo esse código e vamos jogar no return.
+				</p>
+				<p class="p">
+					[11:00] Coloquei entre os parênteses porque é a maneira que ele consegue entender o retorno de múltiplas linhas. A gente coloca sempre quando são múltiplas linhas entre parênteses. Pedi para ele formatar. Ele está falando que meu formatador de JavaScript react não está configurado, vou configurar e ele consegue já formatar para mim. Estou usando o prettier, que é uma extensão do VSCode, para conseguir formatar o código certinho.
+				</p>
+				<p class="p">
+					[11:30] Agora sim tenho minha lista de notas. Se eu salvar isso e voltar no nosso react ele está falando que não consegue compilar, porque não entendeu o que é o lista de notas, não está definido, se não está definido faltou exportar e falar que vamos usar esse componente. No lista de notas vou fechar a aba lateral, quero exportar essa classe, então vou dar export nessa classe.
+				</p>
+				<p class="p">
+					[12:04] Se eu salvar e vier no lista de notas posso vir do lista de notas e dizer que quero importar essa lista. Então, aqui ele não está deixando importar diretamente, vou dar um disable e importar na mão. Import lista de notas from e quero importar a partir do projeto. Import lista de notas from e quero importar a partir do projeto. Se eu fizer isso ele deveria carregar.
+				</p>
+				<p class="p">
+					[12:30] Está falando que tentou importar lista de notas, mas não tem o default export. O que estou fazendo é só dando um export, então tenho que usar as chaves, porque tenho que trazer aqueles elementos. Se eu trouxer o export default, não precisaria daquelas chaves, porque estou por padrão exportando essa lista de notas. Então, export default lista de notas, e nesse caso não preciso dessas chaves em volta.
+				</p>
+				<p class="p">
+					[13:00] Agora sim ele voltou a funcionar e tenho minha lista, a mesma renderização que tinha, só que com um componente. Meu app reduziu muito meu código, deixa mais fácil de entender o que o app está fazendo, ele tem uma seção com um formulário pequeno o suficiente, mas a gente vai abstrair para um componente, e aí além desse formulário tenho uma lista de notas. Fica muito mais fácil entender o que tem lá dentro, dentro dessa lista de notas a gente tem uma ul e várias lis. Dentro delas tenho cards que podemos transformar em componentes. Esse exercício de transformar em componentes que vamos fazer agora.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[1].selected = () => {}
+	</script>
+</body>
+</html>

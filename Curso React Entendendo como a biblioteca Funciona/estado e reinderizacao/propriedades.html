@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso React | Entendendo como a biblioteca funciona</title>
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../../assets/img/react_entendendo.png">
+</head>
+<body>
+
+	<!-- MENU LATERAL -->
+
+	<label for="segundo">
+		<img id="img_burgue" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Aeb2a0NChPEjE2k28v4GjAdFjcgTktaYvQ&usqp=CAU" alt="">
+	</label>
+
+	<input class="hidden" type="checkbox" id="segundo">
+	
+	
+	<header>
+		<label for="primeiro">
+			<img class="toggle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ApQy-dErujF2ZM3GdegSpE7-_FduZ51E3Q&usqp=CAU" alt="">
+		</label>
+
+		<input checked="true" class="hidden" type="checkbox" id="primeiro">
+
+		<div>
+			<img class="logo" src="../../assets/img/react_entendendo.png" alt="">
+
+			<p class="title">React | Entendendo como a biblioteca funciona</p>
+		</div>
+
+		<nav>
+			<article class="alinhar">
+				<img class="book" src="https://cdn-icons-png.flaticon.com/128/2702/2702154.png" alt="">
+
+				<p>AULA ATUAL</p>
+
+			</article>
+
+			<select name="aulas" id="select">
+				<option value="1">01. Criando o projeto</option>
+				<option value="2">02. Componentizando o sistema</option>
+				<option value="3">03. Estilizando com componentes</option>
+				<option value="4">04. Lidando com eventos e propriedades</option>
+				<option value="5">05. Controlando o estado e reinderização</option>
+			</select>
+			<article class="atividades">
+				<img class="ensaio" src="https://cdn-icons-png.flaticon.com/128/6074/6074049.png" alt="">
+
+				<p>ATIVIDADES</p>
+				
+			</article>
+			<ul>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/3415/3415694.png" alt="">
+
+					<aside class="fileira">
+						<a class='modules' href="projeto_final.html">Projeto Final</a>
+					</aside>
+				</li>
+				<li>					
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="index.html">01 Passando propriedades</a>
+						<span>14min</span>
+					</aside>
+				</li>
+				<li style="background: #282c2f">
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="propriedades.html">02 Mais propriedades</a>
+						<span>10min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="state.html">03 O State</a>
+						<span>17min</span>
+					</aside>
+				</li>
+				<li>
+					<img class="img_link" src="https://cdn-icons-png.flaticon.com/128/179/179169.png" alt="">
+					<aside class="fileira">
+						<a class='modules' href="conclusao.html">04 Conclusão</a>
+						<span>4min</span>
+					</aside>
+				</li>
+				<label for="check" id="notu">
+					<article id="button" class="box">
+						<img src="https://cdn-icons-png.flaticon.com/128/4725/4725358.png" alt="">
+						<p>Modo Noturno</p>
+					</article>
+				</label>		
+				<input type="checkbox" id="check" class="checkbox">
+				<a class="home" href="../../index.html">					
+					<div class="dash">
+						<img src="https://cdn-icons-png.flaticon.com/128/4225/4225566.png" alt="">
+						<p>Voltar para a dashboard</p>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="cabecal">
+
+			<h1 class="title_top">02 Mais propriedades</h1>
+			
+			<a href="state.html"> 
+				<img src="https://cdn-icons-png.flaticon.com/128/929/929738.png" alt="">
+			</a>
+
+		</section>
+
+		<video controls="" src="../videoaulas/curso 1/mais propriedades.mp4"></video>
+
+		<section class="transcricao">
+
+			<h2 class="p">Transcrição</h2>
+
+
+			<p class="p">
+				[00:00] Como a gente viu, posso passar propriedades para os meus elementos filhos, então meu app.js está declarando dois filhos e posso passar propriedades customizadas, que a gente criou no nosso caso o criar nota, que passei a referência para uma função do meu elemento pai.
+			</p>
+			<section id="hidden" class="none">
+				<p class="p">
+					[00:14] O meu formulário na hora que for chamar a propriedade de criar nota consigo mudar isso, fazendo uma injeção de dependências, estou injetando uma dependência no formulário de cadastro, deixo ele muito mais maleável e flexível, porque através dessa propriedade criar nota, se a gente navegar até ele, através da propriedade que estamos recebendo pelo construtor consigo acessar pelo atributo props a propriedade que a gente recebeu do pai, e como é uma função estou pedindo para executar a função que passei como referência.
+				</p>
+				<p class="p">
+					[00:53] Só que faltou pegar esse título e texto e salvar em algum lugar para que minha lista de notas consiga receber esses elementos. Se minha lista de notas precisa receber esses elementos, ela também vai precisar de uma propriedade para ter acesso aos elementos que quero desenhar para essa lista de notas que estou fazendo, esse array de notas. Ela tem que receber um array com as notas que a gente criou com título e texto para poder desenhar lá na frente.
+				</p>
+				<p class="p">
+					[01:30] Vou navegar até ela e ela está pegando de um array que criei na hora de mostrar que a gente podia iterar sobre elementos. Mas esse array na verdade quero que seja uma propriedade, então vou ter uma this props notas. Quero iterar sobre um array de notas, e esse array vai exibir para mim, vai ter a própria nota que quero exibir. Fazendo dessa maneira, sendo ela um array, consigo trazer para o meu pai.
+				</p>
+				<p class="p">
+					[02:07] Meu lista de notas vai ter as notas que quero desenhar. Se eu pegar e tiver um array com três elementos ele vai ter que desenhar três elementos. Se tiver dois elementos, vai me desenhar com dois elementos. Se eu passar esse array para ele consigo fazer com que a lista de notas seja dinâmica.
+
+				</p>
+				<p class="p">
+					[02:30] Preciso passar um array, só que ele precisa ter as informações de título e texto. Então, esse array vai ter um dicionário com essas informações. Se quero passar um array, não vou passar um array que está escrito diretamente no código, vou trazer como propriedade do app. Também vou criar um construtor, da mesma maneira que a gente fez com o formulário com título e texto.
+				</p>
+
+				<p class="p">
+					[02:58] Vou pegar as propriedades dessa classe do app e vou declarar no construtor. Vou pegar o construtor e ter um this notas, que vai ser um array. É esse array que vou passar para a lista de notas de fato. Ao invés de ser esse array vou pegar o this notas.
+				</p>
+				<p class="p">
+					[03:22] Meu lista de notas recebe agora um array que vai vir a partir de um atributo do meu objeto pai. Os nomes aqui são bem parecidos, e a gente faz isso de propósito. A minha lista de notas tem uma propriedade chamada notas que está recebendo um atributo do objeto que chama notas. É muito comum isso acontecer, então é legal que você se acostume com isso. Mas o this notas se refere a esse aqui e o notas é a propriedade que a gente criou dentro do lista de notas.
+				</p>
+
+				<p class="p">
+					[03:53] Inserindo a propriedade vou precisar do construtor. Vou ter um construtor que vai receber as props, e aí ele vai chamar o super passando para ele as propriedades também. Ele está me dando um aviso falando que o construtor é useless, ou seja, não é útil, porque não estou fazendo nada com ele, não estou declarando nada mais a não ser passar propriedades para o meu elemento pai. Por padrão, o JavaScript já vai fazer isso, não precisamos declarar esse tipo de construtor. Mas por trás dos panos o JavaScript vai fazer isso, vai criar esse construtor pegando as propriedades e passando para o elemento, para o componente.
+				</p>
+				<p class="p">
+					[04:40] Só quero deixar isso claro porque só usei o objeto aqui, você poderia ficar confuso com relação ao construtor. Então, tenho a propriedade notas, ela está vindo do app e no meu app, como está vazio, não devo ter nenhum aqui, está falando que preciso chamar o super, inclusive, e agora sim, tenho o app, o formulário de notas e nenhuma nota.
+				</p>
+				<p class="p">
+					[05:05] A partir do momento em que começo a preencher isso com por enquanto qualquer valor vou criando notas na minha lista de notas. Não quero preencher esse array com um monte de 1, quero preencher com informações de título e texto. Então, para preencher vou criar um objeto que represente essa nota. Vou fazer um const nova nota que vai ser igual a um objeto literal do JavaScript, você pode conhecer como dicionário, que vai ser um título e um texto.
+				</p>
+				<p class="p">
+					[05:50] Tenho essa nova nota que estou criando, ela é um objeto que vai ter dentro dela a propriedade título e a propriedade de texto. E aí quero associar, adicionar essa nova nota na minha lista de notas. Tenho o this.notas.push, vou dar um push no meu array, na nova nota.
+				</p>
+				<p class="p">
+					[06:10] Vou aqui na hora que crio a nota criar um novo array, um novo elemento dentro do array. Para isso, só vou associar no criar nota, porque não tinha feito o bind, que a gente não estava usando o this dentro da função, então não precisava ter feito o bind até o momento. Vou fazer bind com o this. Estou associando o criar nota com a instância do app que foi criada.
+				</p>
+				<p class="p">
+					[06:37] Agora se eu criar uma nova nota e der um criar nota teoricamente ele criou. Mas por que não está aparecendo do lado? Por que a lista não está sendo atualizada dinamicamente?
+				</p>
+				<p class="p">
+					[06:56] Vamos garantir que seja criado. Vamos dar um console.log e quero ver o tamanho da lista de notas nesse momento. O this notas lenght. Quero ver o tamanho desse array de notas. Se eu voltar e começar a adicionar, cada nota que crio está realmente sendo criada. Ele já está chamando a função, a gente está vendo que esse array de notas está crescendo. Só que se ele está crescendo por que minha lista de notas não está sendo atualizada? Qual o problema? Vamos ver daqui a pouco.
+				</p>
+			</section>
+			<article class="mostrar">
+				<p class="texto_continuar p">
+					<hr class="hr">	
+					<i>continuar lendo</i>
+					<img class="set" src="https://cdn-icons-png.flaticon.com/128/2791/2791552.png" alt="">
+					<hr class="hr_two">
+				</p>
+			</article> 
+		</main>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../assets/script.js"></script>
+
+	<script>		
+		const opitions = document.querySelectorAll('option'); 
+
+		opitions[4].selected = () => {}
+	</script>
+</body>
+</html>
